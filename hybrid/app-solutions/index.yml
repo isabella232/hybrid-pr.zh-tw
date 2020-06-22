@@ -1,0 +1,72 @@
+### YamlMime:Landing
+title: Azure 混式模式和解決方案文件
+summary: 了解如何在您的應用程式開發中運用混合模式和解決方案範例。 Azure 和 Azure Stack 可以開發混合式應用程式，並建置於一套智慧型雲端和智慧邊緣服務上。
+metadata:
+  title: Azure 混式模式和解決方案文件
+  description: 了解如何在您的應用程式開發中運用混合模式和解決方案範例。 Azure 和 Azure Stack 可以開發混合式應用程式，並建置於一套智慧型雲端和智慧邊緣服務上。
+  ms.service: azure-stack
+  ms.topic: landing-page
+  author: BryanLa
+  ms.author: bryanla
+  ms.date: 10/31/2019
+  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
+  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "84909629"
+landingContent:
+- title: 關於混合模式和解決方案
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什麼是混合模式和解決方案範例？
+      url: overview-patterns-solution-examples.md
+  - linkListType: concept
+    links:
+    - text: 混合式應用程式設計考量
+      url: overview-app-design-considerations.md
+- title: 探索混合式模式
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: 跨雲端縮放
+      url: pattern-cross-cloud-scale.md
+    - text: DevOps 混合式 CI/CD
+      url: pattern-cicd-pipeline.md
+    - text: Footfall 偵測 (零售)
+      url: pattern-retail-footfall-detection.md
+    - text: 異地分散式應用程式
+      url: pattern-geo-distributed.md
+- title: 部署混合式解決方案範例
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: 跨雲端縮放
+      url: solution-deployment-guide-cross-cloud-scaling.md
+    - text: DevOps 混合式 CI/CD
+      url: https://aka.ms/hybriddevopsdeploy
+    - text: Footfall 偵測 (零售)
+      url: solution-deployment-guide-retail-footfall-detection.md
+    - text: 異地分散式應用程式
+      url: solution-deployment-guide-geo-distributed.md
+- title: 零售 Footfall 偵測案例
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: 模式
+      url: pattern-retail-footfall-detection.md
+  - linkListType: tutorial
+    links:
+    - text: 解決方案部署指南
+      url: solution-deployment-guide-retail-footfall-detection.md
+- title: 使用內部部署資料案例進行跨雲端調整
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: 模式
+      url: pattern-cross-cloud-scale-onprem-data.md
+  - linkListType: tutorial
+    links:
+    - text: 解決方案部署指南
+      url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
