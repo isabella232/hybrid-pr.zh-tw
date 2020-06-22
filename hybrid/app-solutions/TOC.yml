@@ -1,0 +1,74 @@
+- name: Azure Hybrid 文件
+  href: index.yml
+- name: 概觀
+  items:
+    - name: 混合模式和解決方案範例
+      href: overview-patterns-solution-examples.md
+- name: 模式
+  items:
+    - name: Single
+      items:
+        - name: 跨雲端縮放
+          href: pattern-cross-cloud-scale.md
+        - name: DevOps 混合式 CI/CD
+          href: pattern-cicd-pipeline.md
+        - name: 異地分散式應用程式
+          href: pattern-geo-distributed.md
+        - name: Hybrid 轉送
+          href: pattern-hybrid-relay.md
+        - name: 階層式資料
+          href: pattern-tiered-data-analytics.md
+        - name: 在邊緣定型 ML 模型
+          href: pattern-train-ml-model-at-edge.md
+    - name: 多重
+      items:
+        - name: 跨雲端調整 (內部部署資料)
+          href: pattern-cross-cloud-scale-onprem-data.md
+        - name: Footfall 偵測 (零售)
+          href: pattern-retail-footfall-detection.md
+        - name: 在邊緣進行缺貨偵測
+          href: pattern-out-of-stock-at-edge.md
+- name: 解決方案部署指南
+  items:
+    - name: 跨雲端縮放
+      href: solution-deployment-guide-cross-cloud-scaling.md
+    - name: 跨雲端調整 (內部部署資料)
+      href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+    - name: DevOps 混合式 CI/CD
+      href: 'https://aka.ms/hybriddevopsdeploy'
+    - name: Footfall 偵測 (零售)
+      href: solution-deployment-guide-retail-footfall-detection.md
+    - name: 異地分散式應用程式
+      href: solution-deployment-guide-geo-distributed.md
+    - name: 混合式連線
+      href: solution-deployment-guide-connectivity.md
+    - name: 混合式身分識別
+      href: solution-deployment-guide-identity.md
+    - name: Hybrid 轉送
+      href: 'https://aka.ms/hybridrelaydeployment'
+    - name: 階層式資料
+      href: 'https://aka.ms/tiereddatadeploy'
+    - name: 部署高可用性的 MongoDB
+      href: solution-deployment-guide-mongodb-ha.md
+    - name: 高可用性 SQL Server 2016
+      href: solution-deployment-guide-sql-ha.md
+    - name: 邊緣中的缺貨
+      href: 'https://aka.ms/edgeinferencingdeploy'
+    - name: 在邊線訓練 ML 模型
+      href: 'https://aka.ms/edgetrainingdeploy'
+- name: 概念
+  items:
+    - name: 混合式應用程式設計考量
+      href: overview-app-design-considerations.md
+- name: 相關參考
+  items:
+    - name: Azure 文件
+      href: /azure
+    - name: Azure Stack 文件
+      href: /azure-stack
+- name: 資源
+  items:
+    - name: Microsoft Learn
+      href: /learn
+    - name: Microsoft Q&A
+      href: /answers/products/
