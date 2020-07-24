@@ -10,14 +10,17 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ee69d8f1110166063edc5a4b2cdbfaf36b402868
-  ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+  ms.openlocfilehash: 9793f34db13e324de65b719613c0f4dbf4bdf127
+  ms.sourcegitcommit: 8d75007af6ad574e0629208464bbadb97a5c438e
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/20/2020
-  ms.locfileid: "86477298"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "86949656"
 highlightedContent:
   items:
+  - title: 探索新的 Azure Stack HCI
+    itemType: video
+    url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
   - title: Azure Hybrid 虛擬活動
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -120,7 +123,7 @@ conceptualContent:
       text: Azure DevOps for CI/CD
     - url: /azure/event-hubs/
       itemType: overview
-      text: Azure 事件中樞
+      text: Azure 事件中心
     - url: /azure/azure-functions/
       itemType: overview
       text: Azure Functions
