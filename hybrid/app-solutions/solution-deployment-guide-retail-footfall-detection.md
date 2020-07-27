@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 6913cc522da447092dad0af24e148a3b2576495c
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 5f2e18e164e54f60b1bb7a14026a0c75c7d7ce69
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910055"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477162"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub 來部署 AI 型客流量偵測解決方案
 
@@ -44,7 +44,7 @@ ms.locfileid: "84910055"
 - 在您的目錄中建立兩個服務主體：
   - 一個設定為與 Azure 資源搭配使用，並具備 Azure 訂用帳戶範圍的存取權。
   - 一個設定為與 Azure Stack Hub 資源搭配使用，並具備 Azure Stack Hub 訂用帳戶範圍的存取權。
-  - 若要深入了解建立服務主體及授權存取的相關資訊，請參閱[使用應用程式身分識別來存取資源](/azure-stack/operator/azure-stack-create-service-principals.md)。 如果您偏好使用 Azure CLI，請參閱[使用 Azure CLI 建立 Azure 服務主體](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest)。
+  - 若要深入了解建立服務主體及授權存取的相關資訊，請參閱[使用應用程式身分識別來存取資源](/azure-stack/operator/azure-stack-create-service-principals.md)。 如果您偏好使用 Azure CLI，請參閱[使用 Azure CLI 建立 Azure 服務主體](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest)。
 - 在 Azure 或 Azure Stack Hub 中部署 Azure 認知服務。
   - 首先，請[深入了解認知服務](https://azure.microsoft.com/services/cognitive-services/)。
   - 接著請造訪[將 Azure 認知服務部署至 Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md)，以在 Azure Stack Hub 上部署認知服務。 您必須先註冊才能存取預覽版。

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 8f2b7e48a62896acfce7293dcd4f18d5a43add01
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 741ddf2c3ed234788af359dd233f6a656fbea13c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910165"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477349"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub，透過異地分散式應用程式進行流量導向
 
@@ -52,7 +52,7 @@ ms.locfileid: "84910165"
 
 - **應用程式的自訂網域：** 客戶將用來存取應用程式的自訂網域名稱為何？ 範例應用程式的自訂網域名稱是 www\.scalableasedemo.com  。
 
-- **流量管理員網域：** 建立 [Azure 流量管理員設定檔](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-manage-profiles)時，必須選擇一個網域名稱。 此名稱會與 *trafficmanager.net* 尾碼結合，以註冊流量管理員所管理的網域項目。 就範例應用程式而言，選擇的名稱是 *scalable-ase-demo*。 因此，流量管理員所管理的完整網域名稱是 *scalable-ase-demo.trafficmanager.net*。
+- **流量管理員網域：** 建立 [Azure 流量管理員設定檔](/azure/traffic-manager/traffic-manager-manage-profiles)時，必須選擇一個網域名稱。 此名稱會與 *trafficmanager.net* 尾碼結合，以註冊流量管理員所管理的網域項目。 就範例應用程式而言，選擇的名稱是 *scalable-ase-demo*。 因此，流量管理員所管理的完整網域名稱是 *scalable-ase-demo.trafficmanager.net*。
 
 - **調整應用程式使用量的策略：** 決定應用程式使用量要分散到單一區域中的多個 App Service 環境、多個區域中的多個 App Service 環境，還是兩者混用。 決策依據應來自於客戶流量的來源位置，以及其餘應用程式的支援後端基礎結構的可調整性。 例如，對於 100% 無狀態的應用程式，可以使用每一 Azure 區域多個 App Service 環境的組合，乘以跨多個 Azure 區域部署的 App Service 環境數，來大幅調整應用程式。 由於有 15 個以上的全球 Azure 區域可供選擇，客戶將可真正建置全球性超高延展性的應用程式使用量。 在此處使用的範例應用程式中，有三個 App Service 環境建立在單一 Azure 區域 (美國中南部) 中。
 
@@ -84,7 +84,7 @@ ms.locfileid: "84910165"
 
 ### <a name="obtain-a-custom-domain-and-configure-dns"></a>取得自訂網域並設定 DNS
 
-更新網域的 DNS 區域檔案。 然後，Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Office 365/外部 DNS 記錄使用 [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)新增 DNS 項目。
+更新網域的 DNS 區域檔案。 然後，Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Office 365/外部 DNS 記錄使用 [Azure DNS](/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)新增 DNS 項目。
 
 1. 向公用註冊機構註冊自訂網域。
 
@@ -113,7 +113,7 @@ ms.locfileid: "84910165"
 
 ### <a name="create-web-app-deployment-in-both-clouds"></a>在這兩個雲端中建立 Web 應用程式部署
 
-1. 編輯 **WebApplication.csproj**檔案：選取 `Runtimeidentifier` 並新增 `win10-x64`。 (請參閱[獨立式部署](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。)
+1. 編輯 **WebApplication.csproj**檔案：選取 `Runtimeidentifier` 並新增 `win10-x64`。 (請參閱[獨立式部署](/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。)
 
     ![在 Visual Studio 中編輯 Web 應用程式專案檔](media/solution-deployment-guide-geo-distributed/image3.png)
 
@@ -129,7 +129,7 @@ ms.locfileid: "84910165"
 
     ![將程式碼新增至 Azure Pipelines 中的組建定義](media/solution-deployment-guide-geo-distributed/image4.png)
 
-3. **執行組建**。 [獨立式部署組建](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)程序將會發佈可在 Azure 與 Azure Stack Hub 上執行的成品。
+3. **執行組建**。 [獨立式部署組建](/dotnet/core/deploying/deploy-with-vs#simpleSelf)程序將會發佈可在 Azure 與 Azure Stack Hub 上執行的成品。
 
 #### <a name="using-an-azure-hosted-agent"></a>使用 Azure 託管的代理程式
 
@@ -229,11 +229,11 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 21. 儲存所有變更。
 
 > [!Note]  
-> 工作的某些設定可能已在從範本建立發行定義時自動定義為[環境變數](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables)。 這些設定無法在工作設定中修改；而是必須選取父環境項目才能編輯這些設定。
+> 工作的某些設定可能已在從範本建立發行定義時自動定義為[環境變數](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)。 這些設定無法在工作設定中修改；而是必須選取父環境項目才能編輯這些設定。
 
 ## <a name="part-2-update-web-app-options"></a>第 2 部分：更新 Web 應用程式選項
 
-[Azure App Service](https://docs.microsoft.com/azure/app-service/overview) 可提供可高度擴充、自我修復的 Web 主控服務。
+[Azure App Service](/azure/app-service/overview) 可提供可高度擴充、自我修復的 Web 主控服務。
 
 ![Azure App Service](media/solution-deployment-guide-geo-distributed/image27.png)
 
@@ -246,17 +246,17 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 > [!Note]  
 > 請對所有自訂 DNS 名稱使用 CNAME，但根網域除外 (例如 northwind.com)。
 
-若要將即時網站及其 DNS 網域名稱移轉至 App Service，請參閱[將作用中的 DNS 名稱移轉至 Azure App Service](https://docs.microsoft.com/azure/app-service/manage-custom-dns-migrate-domain)。
+若要將即時網站及其 DNS 網域名稱移轉至 App Service，請參閱[將作用中的 DNS 名稱移轉至 Azure App Service](/azure/app-service/manage-custom-dns-migrate-domain)。
 
 ### <a name="prerequisites"></a>Prerequisites
 
 若要完成此解決方案：
 
-- [建立 App Service 應用程式](https://docs.microsoft.com/azure/app-service/)，或使用您為另一個解決方案建立的應用程式。
+- [建立 App Service 應用程式](/azure/app-service/)，或使用您為另一個解決方案建立的應用程式。
 
 - 購買網域名稱，並確定您可存取網域提供者的 DNS 登錄。
 
-更新網域的 DNS 區域檔案。 Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Office 365/外部 DNS 記錄使用 [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)新增 DNS 項目。
+更新網域的 DNS 區域檔案。 Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Office 365/外部 DNS 記錄使用 [Azure DNS](/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)新增 DNS 項目。
 
 - 向公用註冊機構註冊自訂網域。
 
@@ -267,14 +267,14 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 例如，若要對 northwindcloud.com 和 www\.northwindcloud.com 新增 DNS 項目，請設定 northwindcloud.com 根網域的 DNS 設定。
 
 > [!Note]  
-> 網域名稱可使用 [Azure 入口網站](https://docs.microsoft.com/azure/app-service/manage-custom-dns-buy-domain)來購買。 若要將自訂 DNS 名稱對應至 Web 應用程式，Web 應用程式的 [App Service 方案](https://azure.microsoft.com/pricing/details/app-service/)必須是付費層 (**共用**、**基本**、**標準**或**進階**)。
+> 網域名稱可使用 [Azure 入口網站](/azure/app-service/manage-custom-dns-buy-domain)來購買。 若要將自訂 DNS 名稱對應至 Web 應用程式，Web 應用程式的 [App Service 方案](https://azure.microsoft.com/pricing/details/app-service/)必須是付費層 (**共用**、**基本**、**標準**或**進階**)。
 
 ### <a name="create-and-map-cname-and-a-records"></a>建立和對應 CNAME 與 A 記錄
 
 #### <a name="access-dns-records-with-domain-provider"></a>存取網域提供者中的 DNS 記錄
 
 > [!Note]  
->  請使用 Azure DNS 來設定 Azure Web Apps 的自訂 DNS 名稱。 如需詳細資訊，請參閱[使用 Azure DNS 為 Azure 服務提供自訂網域設定](https://docs.microsoft.com/azure/dns/dns-custom-domain)。
+>  請使用 Azure DNS 來設定 Azure Web Apps 的自訂 DNS 名稱。 如需詳細資訊，請參閱[使用 Azure DNS 為 Azure 服務提供自訂網域設定](/azure/dns/dns-custom-domain)。
 
 1. 登入主要網域提供者的網站。
 
@@ -355,14 +355,14 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 > - 使用指令碼來自動繫結 SSL 憑證。
 
 > [!Note]  
-> 如有需要，請在 Azure 入口網站中取得客戶的 SSL 憑證，並將其繫結至 Web 應用程式。 如需詳細資訊，請參閱 [App Service 憑證教學課程](https://docs.microsoft.com/azure/app-service/web-sites-purchase-ssl-web-site)。
+> 如有需要，請在 Azure 入口網站中取得客戶的 SSL 憑證，並將其繫結至 Web 應用程式。 如需詳細資訊，請參閱 [App Service 憑證教學課程](/azure/app-service/web-sites-purchase-ssl-web-site)。
 
 ### <a name="prerequisites"></a>Prerequisites
 
 若要完成此解決方案：
 
-- [建立 App Service 應用程式。](https://docs.microsoft.com/azure/app-service/)
-- [將自訂 DNS 名稱對應至 Web 應用程式。](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)
+- [建立 App Service 應用程式。](/azure/app-service/)
+- [將自訂 DNS 名稱對應至 Web 應用程式。](/azure/app-service/app-service-web-tutorial-custom-domain)
 - 取得受信任憑證授權單位所核發的 SSL 憑證，並使用金鑰簽署要求。
 
 ### <a name="requirements-for-your-ssl-certificate"></a>SSL 憑證的需求
@@ -402,7 +402,7 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 
     ![檢查 Web 應用程式中的定價層](media/solution-deployment-guide-geo-distributed/image35.png)
 
-**免費**和**共用**服務層級中不支援自訂 SSL。 若要升級，請依照下一節中的步驟操作，或**選擇您的定價層**頁面，然後跳至[上傳並繫結 SSL 憑證](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-ssl)。
+**免費**和**共用**服務層級中不支援自訂 SSL。 若要升級，請依照下一節中的步驟操作，或**選擇您的定價層**頁面，然後跳至[上傳並繫結 SSL 憑證](/azure/app-service/app-service-web-tutorial-custom-ssl)。
 
 #### <a name="scale-up-your-app-service-plan"></a>擴大您的 App Service 方案
 
@@ -463,7 +463,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 出現提示時，請定義您之後將 SSL 憑證上傳至 App Service 時所使用的密碼。
 
-如果您使用 IIS 或 **Certreq.exe** 產生憑證要求，請將憑證安裝至本機電腦，然後[將憑證匯出為 PFX](https://technet.microsoft.com/library/cc754329(v=ws.11).aspx)。
+如果您使用 IIS 或 **Certreq.exe** 產生憑證要求，請將憑證安裝至本機電腦，然後[將憑證匯出為 PFX](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754329(v=ws.11))。
 
 #### <a name="upload-the-ssl-certificate"></a>上傳 SSL 憑證
 
@@ -508,13 +508,13 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 #### <a name="remap-the-a-record-for-ip-ssl"></a>將 IP SSL 的 A 記錄重新對應
 
-如果不在 Web 應用程式中使用以 IP 為基礎的 SSL，請跳至[測試自訂網域的 HTTPS](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-ssl)。
+如果不在 Web 應用程式中使用以 IP 為基礎的 SSL，請跳至[測試自訂網域的 HTTPS](/azure/app-service/app-service-web-tutorial-custom-ssl)。
 
 根據預設，Web 應用程式會使用共用的公用 IP 位址。 當憑證與以 IP 為基礎的 SSL 繫結時，App Service 會為 Web 應用程式建立新的專用 IP 位址。
 
 當 A 記錄對應至 Web 應用程式時，必須使用專用的 IP 位址更新網域登錄。
 
-[自訂網域]  頁面會以新的專用 IP 位址進行更新。 請複製此 [IP 位址](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)，然後將 [A 記錄](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)重新對應至這個新的 IP 位址。
+[自訂網域]  頁面會以新的專用 IP 位址進行更新。 請複製此 [IP 位址](/azure/app-service/app-service-web-tutorial-custom-domain)，然後將 [A 記錄](/azure/app-service/app-service-web-tutorial-custom-domain)重新對應至這個新的 IP 位址。
 
 #### <a name="test-https"></a>測試 HTTPS
 
@@ -626,4 +626,4 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 ## <a name="next-steps"></a>後續步驟
 
-- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。
+- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](/azure/architecture/patterns)。

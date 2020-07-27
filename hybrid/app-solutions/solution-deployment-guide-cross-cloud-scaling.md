@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 740a8c0ec904fe8eb3f9744626bc9dd6655bdb52
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 10cb042e2c6d0c6cb567e14072cd80bc663d686c
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910194"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477332"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>部署應用程式，並使用 Azure 與 Azure Stack Hub 來進行跨雲端規模調整
 
@@ -68,7 +68,7 @@ ms.locfileid: "84910194"
 
 ### <a name="get-a-custom-domain-and-configure-dns"></a>取得自訂網域並設定 DNS
 
-更新網域的 DNS 區域檔案。 Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Office 365/外部 DNS 記錄使用 [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)新增 DNS 項目。
+更新網域的 DNS 區域檔案。 Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Office 365/外部 DNS 記錄使用 [Azure DNS](/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)新增 DNS 項目。
 
 1. 向公用註冊機構註冊自訂網域。
 2. 登入網域的網域名稱註冊機構。 已核准的系統管理員可能需要進行 DNS 更新。
@@ -97,7 +97,7 @@ Azure Repos
 
 ### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>為這兩個雲端中的應用程式服務建立獨立的 Web 應用程式部署
 
-1. 編輯 **WebApplication.csproj** 檔案。 選取 `Runtimeidentifier` 並新增 `win10-x64`。 (請參閱[獨立式部署](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。)
+1. 編輯 **WebApplication.csproj** 檔案。 選取 `Runtimeidentifier` 並新增 `win10-x64`。 (請參閱[獨立式部署](/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。)
 
     ![編輯 Web 應用程式專案檔](media/solution-deployment-guide-cross-cloud-scaling/image3.png)
 
@@ -113,7 +113,7 @@ Azure Repos
 
     ![將程式碼加入 Web 應用程式](media/solution-deployment-guide-cross-cloud-scaling/image4.png)
 
-3. 執行組建。 [獨立式部署組建](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)程序將會發佈可在 Azure 與 Azure Stack Hub 上執行的成品。
+3. 執行組建。 [獨立式部署組建](/dotnet/core/deploying/deploy-with-vs#simpleSelf)程序將會發佈可在 Azure 與 Azure Stack Hub 上執行的成品。
 
 ## <a name="use-an-azure-hosted-agent"></a>使用 Azure 託管的代理程式
 
@@ -211,7 +211,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 21. 儲存所有變更。
 
 > [!Note]  
-> 工作的某些設定可能已在從範本建立發行定義時自動定義為[環境變數](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables)。 這些設定無法在工作設定中修改；而是必須選取父環境項目才能編輯這些設定。
+> 工作的某些設定可能已在從範本建立發行定義時自動定義為[環境變數](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)。 這些設定無法在工作設定中修改；而是必須選取父環境項目才能編輯這些設定。
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>透過 Visual Studio 發佈至 Azure Stack Hub
 
@@ -254,7 +254,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 
 #### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>為這兩個雲端中的應用程式服務建立獨立的 Web 應用程式部署
 
-1. 編輯 **WebApplication.csproj**檔案：選取 `Runtimeidentifier`，然後新增 `win10-x64`。 如需詳細資訊，請參閱[獨立式部署](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。
+1. 編輯 **WebApplication.csproj**檔案：選取 `Runtimeidentifier`，然後新增 `win10-x64`。 如需詳細資訊，請參閱[獨立式部署](/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。
 
 2. 使用 Team Explorer 將程式碼簽入 Azure Repos 中。
 
@@ -268,7 +268,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 
 3. 在 [引數]  中，新增 **-r win10-x64** 程式碼。 想要透過 .NET Core 觸發獨立式部署就必須新增此項目。
 
-4. 執行組建。 [獨立式部署組建](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf)程序將會發佈可在 Azure 與 Azure Stack Hub 上執行的成品。
+4. 執行組建。 [獨立式部署組建](/dotnet/core/deploying/deploy-with-vs#simpleSelf)程序將會發佈可在 Azure 與 Azure Stack Hub 上執行的成品。
 
 #### <a name="use-an-azure-hosted-build-agent"></a>使用 Azure 託管的組建代理程式
 
@@ -329,7 +329,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 23. 儲存所有變更。
 
 > [!Note]  
-> 發行工作的某些設定已在從範本建立發行定義時自動定義為[環境變數](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables)。 這些設定無法在工作設定中修改，但可在父環境項目中修改。
+> 發行工作的某些設定已在從範本建立發行定義時自動定義為[環境變數](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)。 這些設定無法在工作設定中修改，但可在父環境項目中修改。
 
 ## <a name="create-a-release"></a>建立發行
 
@@ -361,4 +361,4 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 
 ## <a name="next-steps"></a>後續步驟
 
-- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。
+- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](/azure/architecture/patterns)。

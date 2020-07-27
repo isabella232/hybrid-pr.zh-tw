@@ -7,20 +7,20 @@ ms.date: 06/07/2020
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 4fd52f76baad8059e130adfc01cdd0152b40a510
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: c56575ac8ea6cb35d60bb9419269db89b0295721
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910118"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477213"
 ---
 # <a name="hybrid-app-design-considerations"></a>混合式應用程式設計考量
 
 Microsoft Azure 是唯一的一致性混合式雲端。 其可讓您重複運用您的開發投資，並且讓應用程式能夠跨越全域 Azure、Azure 主權雲端和 Azure Stack (此為資料中心的 Azure 延伸模組之一)。 跨雲端應用程式也稱為*混合式應用程式*。
 
-[*Azure 應用程式架構指南*](https://docs.microsoft.com/azure/architecture/guide)說明設定可擴充、可復原和高可用性應用程式的結構化方法。 [*Azure 應用程式架構指南*](https://docs.microsoft.com/azure/architecture/guide)中說明的考量事項，同樣適用於針對單一雲端而設計的應用程式和跨雲端的應用程式。
+[*Azure 應用程式架構指南*](/azure/architecture/guide)說明設定可擴充、可復原和高可用性應用程式的結構化方法。 [*Azure 應用程式架構指南*](/azure/architecture/guide)中說明的考量事項，同樣適用於針對單一雲端而設計的應用程式和跨雲端的應用程式。
 
-本文增補了 [*Azure 應用程式*](https://docs.microsoft.com/azure/architecture/guide/) [*架構指南*](https://docs.microsoft.com/azure/architecture/guide/)中討論的[*軟體品質的要素*](https://docs.microsoft.com/azure/architecture/guide/pillars)，主要著重於設計混合式應用程式的說明。 此外，我們也新增了*位置*要素，因為混合式應用程式並非專屬於一個雲端或一個內部部署資料中心。
+本文增補了 [*Azure 應用程式*](/azure/architecture/guide/) [*架構指南*](/azure/architecture/guide/)中討論的[*軟體品質的要素*](/azure/architecture/guide/pillars)，主要著重於設計混合式應用程式的說明。 此外，我們也新增了*位置*要素，因為混合式應用程式並非專屬於一個雲端或一個內部部署資料中心。
 
 混合式案例依開發時可使用的資源而有很大的差異，可供程式開發，同時需一併考量像是地理位置、安全性、網際網路存取權，以及其他因素。 雖然本指南無法列舉您特有的考量，但可提供一些重要的指導方針和最佳做法供您依循。 要成功設計、設定、部署和維護混合式應用程式架構，牽涉到許多可能不為您所熟知的設計考量。
 
@@ -93,7 +93,7 @@ Microsoft Azure 是唯一的一致性混合式雲端。 其可讓您重複運用
 
 **確認必要的位置。** 請確定應用程式或其任何元件必須在特定雲端中運作，或需要該雲端的認證。 這可能包括您的公司或法律規定的主權需求。 此外，請確認特定位置或地區設定是否需要任何內部部署作業。
 
-**確定連線相依性。** 必要的位置和其他因素可能會決定元件之間的連線相依性。 在放置元件時，請確認其間的通訊具有最佳連線能力和安全性。 選項包括 [*VPN*](https://docs.microsoft.com/azure/vpn-gateway/)、[*ExpressRoute*](https://docs.microsoft.com/azure/expressroute/) 和[*混合式連線*](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections)。
+**確定連線相依性。** 必要的位置和其他因素可能會決定元件之間的連線相依性。 在放置元件時，請確認其間的通訊具有最佳連線能力和安全性。 選項包括 [*VPN*](/azure/vpn-gateway/)、[*ExpressRoute*](/azure/expressroute/) 和[*混合式連線*](/azure/app-service/app-service-hybrid-connections)。
 
 **評估平台功能。** 針對每個應用程式元件，請確認雲端上是否有應用程式元件所需的資源提供者，以及頻寬是否足以支應預期的輸送量和延遲需求。
 
@@ -109,7 +109,7 @@ Microsoft Azure 是唯一的一致性混合式雲端。 其可讓您重複運用
 
 延展性是指系統對於應用程式負載增加的處理能力，此能力可能隨著其他因素和作用力而改變，且除了會影響應用程式的大小和範圍外，也會影響對象的大小。
 
-如需此要素的核心討論，請參閱卓越架構五大要素中的[*延展性*](https://docs.microsoft.com/azure/architecture/guide/pillars#scalability)。
+如需此要素的核心討論，請參閱卓越架構五大要素中的[*延展性*](/azure/architecture/guide/pillars#scalability)。
 
 混合式應用程式的水準調整方法可讓您新增更多執行個體以符合需求，然後在使用頻率較低時加以停用。
 
@@ -155,7 +155,7 @@ Microsoft Azure 是唯一的一致性混合式雲端。 其可讓您重複運用
 
 「復原」是指混合式應用程式和系統從失敗中復原並繼續運作的能力。 災害復原的目標是使應用程式在發生失敗後，能夠恢復到完全正常運作的狀態。 復原策略包括備份、複寫和災害復原等解決方案。
 
-如需此要素的核心討論，請參閱卓越架構五大要素中的[*復原*](https://docs.microsoft.com/azure/architecture/guide/pillars#resiliency)。
+如需此要素的核心討論，請參閱卓越架構五大要素中的[*復原*](/azure/architecture/guide/pillars#resiliency)。
 
 ### <a name="resiliency-checklist"></a>復原檢查清單
 
@@ -201,7 +201,7 @@ Microsoft Azure 是唯一的一致性混合式雲端。 其可讓您重複運用
 
 安全性是任何雲端應用程式的主要考量之一，對混合式雲端應用程式而言更是重要。
 
-如需此要素的核心討論，請參閱卓越架構五大要素中的[*安全性*](https://docs.microsoft.com/azure/architecture/guide/pillars#security)。
+如需此要素的核心討論，請參閱卓越架構五大要素中的[*安全性*](/azure/architecture/guide/pillars#security)。
 
 ### <a name="security-checklist"></a>安全性檢查清單
 

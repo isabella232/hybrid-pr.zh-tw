@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 75289eae902c5363862e345bdedb97cbcee0476e
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 6de35cb55c4c35a2a9927f9ffc2516ccb00cd89f
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910054"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477315"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>使用內部部署資料部署可跨雲端調整的混合式應用程式
 
@@ -131,7 +131,7 @@ Azure App Service 可簡化執行和管理 Web 應用程式的工作。 Azure St
 
 ### <a name="create-web-apps"></a>建立 Web 應用程式
 
-1. 依照[管理 Azure 中的 App Service 方案](https://docs.microsoft.com/azure/app-service/app-service-plan-manage#create-an-app-service-plan)中的指示，在 Azure 中建立 Web 應用程式。 請確實將 Web 應用程式放在與混合式網路相同的訂用帳戶和資源群組中。
+1. 依照[管理 Azure 中的 App Service 方案](/azure/app-service/app-service-plan-manage#create-an-app-service-plan)中的指示，在 Azure 中建立 Web 應用程式。 請確實將 Web 應用程式放在與混合式網路相同的訂用帳戶和資源群組中。
 
 2. 在 Azure Stack Hub 中重複前述步驟 (1)。
 
@@ -172,7 +172,7 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 ### <a name="integrate-the-azure-app-service-app-with-the-hybrid-network"></a>整合 Azure App Service 應用程式與混合式網路
 
-1. 若要將應用程式連線至 Azure VNet，請依照[ VNet 整合的必要閘道](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration)中的指示操作。
+1. 若要將應用程式連線至 Azure VNet，請依照[ VNet 整合的必要閘道](/azure/app-service/web-sites-integrate-with-vnet#gateway-required-vnet-integration)中的指示操作。
 
 2. 找出裝載 Web 應用程式的 App Service 方案，移至其 [設定]  。 在 [設定]  中，選取 [網路]  。
 
@@ -186,7 +186,7 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
     ![要在虛擬網路整合中路由的 IP 位址範圍](media/solution-deployment-guide-hybrid/image13.png)
 
-若要深入了解 how App Service 與 Azure VNet 的整合方式，請參閱[將您的應用程式與 Azure 虛擬網路整合](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet)。
+若要深入了解 how App Service 與 Azure VNet 的整合方式，請參閱[將您的應用程式與 Azure 虛擬網路整合](/azure/app-service/web-sites-integrate-with-vnet)。
 
 ### <a name="configure-the-azure-stack-hub-virtual-network"></a>設定 Azure Stack Hub 虛擬網路
 
@@ -210,7 +210,7 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 ### <a name="create-subdomains"></a>建立子網域
 
-由於流量管理員需倚賴 DNS CNAME，因此子網域必須能夠正確地將流量路由至端點。 如需與 DNS 記錄和網域之間的對應有關的詳細資訊，請參閱[使用流量管理員對應網域](https://docs.microsoft.com/azure/app-service/web-sites-traffic-manager-custom-domain-name)。
+由於流量管理員需倚賴 DNS CNAME，因此子網域必須能夠正確地將流量路由至端點。 如需與 DNS 記錄和網域之間的對應有關的詳細資訊，請參閱[使用流量管理員對應網域](/azure/app-service/web-sites-traffic-manager-custom-domain-name)。
 
 針對 Azure 端點，您必須建立可讓使用者用來存取 Web 應用程式的子網域。 在本教學課程中可以使用 **app.northwind.com**，但您應根據自己的網域自訂此值。
 
@@ -218,13 +218,13 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 ### <a name="configure-a-custom-domain-in-azure"></a>在 Azure 中設定自訂網域
 
-1. 藉由[將 CNAME 對應至 Azure App Service](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)，以將 **app.northwind.com** 主機名稱新增至 Azure Web 應用程式。
+1. 藉由[將 CNAME 對應至 Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)，以將 **app.northwind.com** 主機名稱新增至 Azure Web 應用程式。
 
 ### <a name="configure-custom-domains-in-azure-stack-hub"></a>在 Azure Stack Hub 中設定自訂網域
 
-1. 藉由[將 A 記錄對應至 Azure App Service](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record)，以將 **azurestack.northwind.com** 主機名稱新增至 Azure Stack Hub Web 應用程式。 對於 App Service 應用程式，請使用網際網路可路由的 IP 位址。
+1. 藉由[將 A 記錄對應至 Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record)，以將 **azurestack.northwind.com** 主機名稱新增至 Azure Stack Hub Web 應用程式。 對於 App Service 應用程式，請使用網際網路可路由的 IP 位址。
 
-2. 藉由[將 CNAME 對應至 Azure App Service](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)，以將 **app.northwind.com** 主機名稱新增至 Azure Stack Hub Web 應用程式。 請使用您在先前的步驟 (1) 中設定的主機名稱作為 CNAME 的目標。
+2. 藉由[將 CNAME 對應至 Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)，以將 **app.northwind.com** 主機名稱新增至 Azure Stack Hub Web 應用程式。 請使用您在先前的步驟 (1) 中設定的主機名稱作為 CNAME 的目標。
 
 ## <a name="configure-ssl-certificates-for-cross-cloud-scaling"></a>設定跨雲端縮放的 SSL 憑證
 
@@ -238,9 +238,9 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 1. 確定您取得的 SSL 憑證適用於您所建立的子網域。 (您也可以使用萬用字元憑證)。
 
-2. 在 Azure 中，依照[將現有的自訂 SSL 憑證繫結至 Azure Web Apps](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-ssl) 一文的**準備您的 Web 應用程式**和**繫結 SSL 憑證**小節所提供的指示操作。 請選取 [以 SNI 為基礎的 SSL]  作為 [SSL 類型]  。
+2. 在 Azure 中，依照[將現有的自訂 SSL 憑證繫結至 Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) 一文的**準備您的 Web 應用程式**和**繫結 SSL 憑證**小節所提供的指示操作。 請選取 [以 SNI 為基礎的 SSL]  作為 [SSL 類型]  。
 
-3. 將所有流量重新都導向至 HTTPS 連接埠。 請依照[將現有的自訂 SSL 憑證繫結至 Azure Web Apps](https://docs.microsoft.com/Azure/app-service/app-service-web-tutorial-custom-ssl) 一文的**強制執行 HTTPS** 小節所提供的指示操作。
+3. 將所有流量重新都導向至 HTTPS 連接埠。 請依照[將現有的自訂 SSL 憑證繫結至 Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) 一文的**強制執行 HTTPS** 小節所提供的指示操作。
 
 若要將 SSL 新增至 Azure Stack Hub：
 
@@ -248,13 +248,13 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 ## <a name="configure-and-deploy-the-web-app"></a>設定及部署 Web 應用程式
 
-您將設定應用程式程式碼，以將遙測資料報告至正確的 Application Insights 執行個體，並使用正確的連接字串來設定 Web 應用程式。 若要深入了解 Application Insights，請參閱[什麼是 Application Insights？](https://docs.microsoft.com/azure/application-insights/app-insights-overview)。
+您將設定應用程式程式碼，以將遙測資料報告至正確的 Application Insights 執行個體，並使用正確的連接字串來設定 Web 應用程式。 若要深入了解 Application Insights，請參閱[什麼是 Application Insights？](/azure/application-insights/app-insights-overview)。
 
 ### <a name="add-application-insights"></a>新增 Application Insights
 
 1. 在 Microsoft Visual Studio 中開啟您的 Web 應用程式。
 
-2. 在您的專案中[新增 Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-core#enable-client-side-telemetry-for-web-applications)，以傳輸 Application Insights 在 Web 流量增加或減少時用來建立警示的遙測資料。
+2. 在您的專案中[新增 Application Insights](/azure/azure-monitor/app/asp-net-core#enable-client-side-telemetry-for-web-applications)，以傳輸 Application Insights 在 Web 流量增加或減少時用來建立警示的遙測資料。
 
 ### <a name="configure-dynamic-connection-strings"></a>設定動態連接字串
 
@@ -287,7 +287,7 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
 1. 建立適用於 Azure 和 Azure Stack Hub 的連接字串。 這兩個字串除了所使用的 IP 位址外，其餘部分應相同。
 
-2. 在 Azure 和 Azure Stack Hub 中，以 `SQLCONNSTR\_` 作為名稱中的前置詞，為 Web 應用程式新增適當的連接字串[作為應用程式設定](https://docs.microsoft.com/azure/app-service/web-sites-configure)。
+2. 在 Azure 和 Azure Stack Hub 中，以 `SQLCONNSTR\_` 作為名稱中的前置詞，為 Web 應用程式新增適當的連接字串[作為應用程式設定](/azure/app-service/web-sites-configure)。
 
 3. **儲存** Web 應用程式設定，並重新啟動應用程式。
 
@@ -543,4 +543,4 @@ Azure Application Insights 可讓您根據自己設定的條件來監視應用�
 
 ## <a name="next-steps"></a>後續步驟
 
-- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。
+- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](/azure/architecture/patterns)。

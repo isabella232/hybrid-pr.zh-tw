@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 1b3c683dd3e4a68413f83fd3cc129d6e6f594e1b
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 650eef0f144ecafab4586d93f72e1defdf4a61ce
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910164"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477247"
 ---
 # <a name="configure-hybrid-cloud-identity-for-azure-and-azure-stack-hub-apps"></a>為 Azure 和 Azure Stack Hub 應用程式設定混合式雲端身分識別
 
@@ -69,4 +69,4 @@ ms.locfileid: "84910164"
 ## <a name="next-steps"></a>後續步驟
 
 - 若要深入了解在 Azure Stack Hub 處理身分識別的方式，請參閱 [Azure Stack Hub 的身分識別架構](/azure-stack/operator/azure-stack-identity-architecture.md)。
-- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。
+- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](/azure/architecture/patterns)。

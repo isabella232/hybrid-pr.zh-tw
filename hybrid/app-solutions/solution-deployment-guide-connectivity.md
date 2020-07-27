@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 0e1a0fc4fb4110fdb406d4b4b2e72abb8f5412c9
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910047"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477281"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>使用 Azure 與 Azure Stack Hub 設定混合式雲端連線
 
@@ -37,7 +37,7 @@ ms.locfileid: "84910047"
 ### <a name="azure"></a>Azure
 
 - 如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
-- 在 Azure 中建立 [Web 應用程式](https://docs.microsoft.com/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?view=vsts&tabs=vsts)。 請記下 Web 應用程式 URL，您在解決方案中將會需要用到這項資訊。
+- 在 Azure 中建立 [Web 應用程式](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts)。 請記下 Web 應用程式 URL，您在解決方案中將會需要用到這項資訊。
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -69,7 +69,7 @@ Azure Stack Hub 操作員必須部署 App Service、建立方案與供應項目�
 
 #### <a name="solution-example-values"></a>解決方案範例值
 
-此解決方案中的範例使用下列值。 您可以使用這些值來建立測試環境，或參考這些值，進一步了解範例。 如需特定 VPN 閘道設定的詳細資訊，請參閱[關於 VPN 閘道設定](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings)。
+此解決方案中的範例使用下列值。 您可以使用這些值來建立測試環境，或參考這些值，進一步了解範例。 如需特定 VPN 閘道設定的詳細資訊，請參閱[關於 VPN 閘道設定](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings)。
 
 連線規格：
 
@@ -99,7 +99,7 @@ Azure Stack Hub 操作員必須部署 App Service、建立方案與供應項目�
 
 ## <a name="create-a-virtual-network-in-global-azure-and-azure-stack-hub"></a>在全域 Azure 與 Azure Stack Hub 中建立虛擬網路
 
-透過 Azure 入口網站，使用下列步驟來建立虛擬網路。 如果您使用本文作為解決方案，則可使用[範例值](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values)。 如果使用本文來設定生產環境，請以您自己的值取代範例設定。
+透過 Azure 入口網站，使用下列步驟來建立虛擬網路。 如果您使用本文作為解決方案，則可使用[範例值](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values)。 如果使用本文來設定生產環境，請以您自己的值取代範例設定。
 
 > [!IMPORTANT]
 > 您必須確定在 Azure 或 Azure Stack Hub vNet 位址空間中沒有任何重疊的 IP 位址。
@@ -212,4 +212,4 @@ Azure Stack Hub 操作員必須部署 App Service、建立方案與供應項目�
 
 ## <a name="next-steps"></a>後續步驟
 
-- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](https://docs.microsoft.com/azure/architecture/patterns)。
+- 若要深入了解 Azure 雲端模式，請參閱[雲端設計模式](/azure/architecture/patterns)。

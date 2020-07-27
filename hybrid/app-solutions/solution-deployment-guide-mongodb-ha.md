@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: b34ba7c10ff5f658d645923ae8b6de2fb2607ccb
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910183"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477264"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>將高度可用的 MongoDB 解決方案部署到 Azure 和 Azure Stack Hub
 
@@ -40,9 +40,9 @@ ms.locfileid: "84910183"
 - 兩個連線的 Azure Stack Hub 整合式系統 (Azure Stack Hub)。 此部署不適用於 Azure Stack 開發套件 (ASDK)。 若要深入了解 Azure Stack Hub，請參閱[什麼是 Azure Stack Hub？](https://azure.microsoft.com/products/azure-stack/hub/)
   - 每個 Azure Stack Hub 上的租用戶訂閱。 
   - **記下每個訂閱識別碼，以及每個 Azure Stack Hub 的 Azure Resource Manager 端點。**
-- 具有每個 Azure Stack Hub 上租用戶訂閱權限的 Azure Active Directory (Azure AD) 服務主體。 若針對不同的 Azure AD 租用戶部署了 Azure Stack Hub，建議您建立兩個服務主體。 若要了解如何建立 Azure Stack Hub 的服務主體，請參閱[使用應用程式身分識別來存取 Azure Stack Hub 資源](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals)。
+- 具有每個 Azure Stack Hub 上租用戶訂閱權限的 Azure Active Directory (Azure AD) 服務主體。 若針對不同的 Azure AD 租用戶部署了 Azure Stack Hub，建議您建立兩個服務主體。 若要了解如何建立 Azure Stack Hub 的服務主體，請參閱[使用應用程式身分識別來存取 Azure Stack Hub 資源](/azure-stack/user/azure-stack-create-service-principals)。
   - **記下每個服務主體的應用程式識別碼、用戶端密碼和租用戶名稱 (xxxxx.onmicrosoft.com)。**
-- Ubuntu 16.04 已與每個 Azure Stack Hub 的 Marketplace 進行摘要整合。 若要深入了解 Marketplace 摘要整合，請參閱[將 Marketplace 項目下載到 Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-download-azure-marketplace-item)。
+- Ubuntu 16.04 已與每個 Azure Stack Hub 的 Marketplace 進行摘要整合。 若要深入了解 Marketplace 摘要整合，請參閱[將 Marketplace 項目下載到 Azure Stack Hub](/azure-stack/operator/azure-stack-download-azure-marketplace-item)。
 - [適用於 Windows 的 Docker](https://docs.docker.com/docker-for-windows/) 已安裝在您的本機電腦上。
 
 ## <a name="get-the-docker-image"></a>取得 Docker 映像

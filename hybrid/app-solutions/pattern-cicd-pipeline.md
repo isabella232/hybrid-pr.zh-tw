@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 306cc9604a8e919724f9f76b7e5122d534d2d1ae
-ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
-ms.translationtype: MT
+ms.openlocfilehash: e26056a9507a7467473b009725d4f210d9d59ec8
+ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84910119"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "86477230"
 ---
 # <a name="devops-pattern"></a>DevOps 模式
 
@@ -47,7 +47,7 @@ DevOps 模式的目的是要確保不論目標環境為何，都能有跨部署�
 - 部署參數是否將適用於所有目標環境中？
 - 是否在所有目標雲端中都可以使用資源特有的屬性？
 
-如需詳細資訊，請參閱[針對雲端一致性開發 Azure Resource Manager 範本](https://docs.microsoft.com/azure/azure-resource-manager/templates-cloud-consistency)。
+如需詳細資訊，請參閱[針對雲端一致性開發 Azure Resource Manager 範本](/azure/azure-resource-manager/templates-cloud-consistency)。
 
 此外，在決定此模式的實作方式時，請考量以下幾點：
 
