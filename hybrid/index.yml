@@ -10,17 +10,20 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: 9793f34db13e324de65b719613c0f4dbf4bdf127
-  ms.sourcegitcommit: 8d75007af6ad574e0629208464bbadb97a5c438e
+  ms.openlocfilehash: 5e47f05293640339329914a3183fae51649ded4c
+  ms.sourcegitcommit: ad41cc782094d57b506a3a1d98209f6cf94f0f3b
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/22/2020
-  ms.locfileid: "86949656"
+  ms.lasthandoff: 07/24/2020
+  ms.locfileid: "87121802"
 highlightedContent:
   items:
   - title: 探索新的 Azure Stack HCI
     itemType: video
     url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
+  - title: 激發 2020：Azure Stack HCI 的新功能
+    itemType: video
+    url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
   - title: Azure Hybrid 虛擬活動
     itemType: video
     url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -69,7 +72,7 @@ conceptualContent:
     links:
     - url: /azure/bot-service
       itemType: overview
-      text: Azure Bot Service
+      text: Azure Bot 服務
     - url: /azure/search/
       itemType: overview
       text: Azue 認知搜尋
@@ -258,7 +261,7 @@ additionalContent:
         text: 什麼是模式和解決方案範例？
       - url: ./app-solutions/overview-app-design-considerations.md
         text: 混合式應用程式設計考量
-    - title: 探索混合式模式
+    - title: 探索混合式應用程式模式
       links:
       - url: ./app-solutions/pattern-cross-cloud-scale.md
         text: 跨雲端縮放
@@ -268,7 +271,7 @@ additionalContent:
         text: Footfall 偵測 (零售)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: 異地分散式應用程式
-    - title: 部署混合式解決方案範例
+    - title: 部署混合式應用程式解決方案範例
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
         text: 跨雲端縮放
@@ -298,6 +301,8 @@ additionalContent:
         text: 適用於 Azure 的 .NET 開發
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc 快速入門手冊
+      - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+        text: Azure Stack HCI 評估指南
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Azure IoT Edge 裝置認證
       - url: /samples/browse/
