@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 06/30/2020
-  ms.openlocfilehash: ab8146340f284af226f336af8fddd2a30977869d
-  ms.sourcegitcommit: 2efdd6422c2af773ad7890dcbc546e816e501c0e
+  ms.openlocfilehash: b888756accc1e538d358e91aec6740b392dafea0
+  ms.sourcegitcommit: 72dbbc933220a4e7273abf46ad3fc6032d122ca7
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/28/2020
-  ms.locfileid: "87264092"
+  ms.lasthandoff: 07/31/2020
+  ms.locfileid: "87473782"
 highlightedContent:
   items:
   - title: 探索新的 Azure Stack HCI
@@ -56,7 +56,7 @@ productDirectory:
     - url: /azure-stack/hci
       text: Azure Stack HCI
   - title: 適用於裝置的智慧邊緣平台。
-    imageSrc: media/index/azure-stack-hub.svg
+    imageSrc: media/index/intelligent.svg
     links:
     - url: /azure/iot-edge/
       text: Azure IoT Edge
@@ -251,6 +251,20 @@ conceptualContent:
     - url: /azure/fxt-edge-filer/fxt-overview
       itemType: overview
       text: Azure FXT Edge Filer
+  - title: 工具
+    links:
+    - url: /dotnet/azure/
+      itemType: overview
+      text: 適用於 Azure 的 .NET 開發
+    - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+      itemType: overview
+      text: 視覺 AI 開發人員套件
+    - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+      itemType: overview
+      text: 適用於 Visual Studio Code 的 Azure IoT 工具
+    - url: /visualstudio/azure/
+      itemType: overview
+      text: Visual Studio Azure 開發
 additionalContent:
   sections:
   - title: 混合式方案
@@ -283,43 +297,43 @@ additionalContent:
         text: 異地分散式應用程式
   - title: 其他資源
     items:
-    - title: 一般資源
+    - title: 一般
       links:
       - url: /azure-stack/operator/compare-azure-azure-stack
         text: Azure 全域雲端與 Azure Stack
+      - url: https://azure.microsoft.com/blog/topics/hybrid/
+        text: Azure 混合式部落格
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure 混合式功能
-      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
-        text: Azure Stack 混合式應用程式簡介
+      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+        text: 客戶 Azure Stack Hub 解決方案
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
         text: 客戶混合式雲端故事
-      - url: /learn
-        text: Microsoft Learn 互動式訓練
-      - url: /learn/tv/
-        text: Microsoft Learn TV
-    - title: 用於建置和操作的資源
+      - url: /answers/products/
+        text: Microsoft Q&A 論壇
+    - title: 評估與學習
       links:
-      - url: /dotnet/azure/
-        text: 適用於 Azure 的 .NET 開發
       - url: https://github.com/likamrat/azure_arc
         text: Azure Arc 快速入門手冊
+      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+        text: Azure IoT Edge AI 影片智慧解決方案加速器
+      - url: https://labs.iotedge.dev/
+        text: Azure IoT Edge 實際操作實驗室
+      - url: https://www.azureiotsolutions.com/Accelerators
+        text: Azure IoT 解決方案加速器
+      - url: /azure-stack/asdk
+        text: Azure Stack 開發套件
       - url: https://github.com/Azure/AzureStackHCI-EvalGuide
         text: Azure Stack HCI 評估指南
+      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+        text: Azure Stack 混合式應用程式簡介
       - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
         text: Azure IoT Edge 裝置認證
       - url: /samples/browse/
         text: 程式碼範例瀏覽器
+      - url: https://docs.docker.com/
+        text: Docker 文件
       - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
         text: 從 Azure Stack Hub 動態擴充到 Azure
-      - url: https://labs.iotedge.dev/
-        text: IoT Edge 實際操作實驗室
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-        text: 視覺 AI 開發人員套件
-      - url: /visualstudio/azure/
-        text: Visual Studio Azure 開發
-    - title: 支援和其他資源
-      links:
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure 混合式部落格
-      - url: /answers/products/
-        text: Microsoft Q&A 論壇
+      - url: /learn
+        text: Microsoft Learn
