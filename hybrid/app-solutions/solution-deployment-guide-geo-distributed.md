@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 741ddf2c3ed234788af359dd233f6a656fbea13c
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
+ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477349"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "88886827"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub，透過異地分散式應用程式進行流量導向
 
@@ -84,7 +84,7 @@ ms.locfileid: "86477349"
 
 ### <a name="obtain-a-custom-domain-and-configure-dns"></a>取得自訂網域並設定 DNS
 
-更新網域的 DNS 區域檔案。 然後，Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Office 365/外部 DNS 記錄使用 [Azure DNS](/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)新增 DNS 項目。
+更新網域的 DNS 區域檔案。 然後，Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Microsoft 365/外部 DNS 記錄使用 [Azure DNS](/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)新增 DNS 項目。
 
 1. 向公用註冊機構註冊自訂網域。
 
@@ -256,7 +256,7 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 
 - 購買網域名稱，並確定您可存取網域提供者的 DNS 登錄。
 
-更新網域的 DNS 區域檔案。 Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Office 365/外部 DNS 記錄使用 [Azure DNS](/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/)新增 DNS 項目。
+更新網域的 DNS 區域檔案。 Azure AD 會驗證自訂網域名稱的擁有權。 對於 Azure 中的 Azure/Microsoft 365/外部 DNS 記錄使用 [Azure DNS](/azure/dns/dns-getstarted-portal)，或在[不同的 DNS 註冊機構](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)新增 DNS 項目。
 
 - 向公用註冊機構註冊自訂網域。
 
