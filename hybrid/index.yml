@@ -10,23 +10,29 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 09/02/2020
-  ms.openlocfilehash: 8df4847263d2632d35f0817752fbdf69afbe01d3
-  ms.sourcegitcommit: 36f2c0f6e8ed4512b76d77dde8c4e7473cc4719c
+  ms.openlocfilehash: 8109b1b42c133afa3179b362c543118965486ac7
+  ms.sourcegitcommit: 64698a0824c87d0838b57cff05187f4225bb619c
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/03/2020
-  ms.locfileid: "89410769"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "91209700"
 highlightedContent:
   items:
+  - title: Ignite 2020：混合式工作階段
+    itemType: video
+    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
+  - title: Ignite 2020：Azure Arc 工作階段
+    itemType: video
+    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" Arc "
+  - title: Ignite 2020：智慧邊緣工作階段
+    itemType: video
+    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q="intelligent edge"
   - title: 探索新的 Azure Stack HCI
     itemType: video
     url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/
   - title: 激發 2020：Azure Stack HCI 的新功能
     itemType: video
     url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
-  - title: Azure Hybrid 虛擬活動
-    itemType: video
-    url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
   - title: 組建 2020：混合式工作階段
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D
@@ -36,9 +42,6 @@ highlightedContent:
   - title: 組建 2020：智慧邊緣工作階段
     itemType: video
     url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
-  - title: Ignite 2019：混合式工作階段
-    itemType: video
-    url: https://myignite.techcommunity.microsoft.com/sessions?t={"from":"2019-11-03T08:00:00-05:00","to":"2019-11-08T19:00:00-05:00"}&q=hybrid&s={"name":"translate.refine.label.sort.relevance","type":0}&g=["on-demand"]
 productDirectory:
   title: Azure 混合式雲端平台
   summary: 混合式平台可用來建立和操作混合式解決方案。
@@ -107,9 +110,12 @@ conceptualContent:
       text: Kubernetes 上的 IoT Edge
   - title: 資料庫
     links:
-    - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+    - url: /azure/azure-arc/data/overview
       itemType: overview
-      text: 已啟用 Azure Arc 的資料服務 (個人預覽版註冊)
+      text: 已啟用 Azure Arc 的資料服務 (預覽)
+    - url: /sql/sql-server/azure-arc/overview
+      itemType: overview
+      text: 已啟用 Azure Arc 的 SQL Server (預覽)
     - url: /azure/azure-sql-edge/overview
       itemType: overview
       text: Azure SQL Edge (預覽)
@@ -181,15 +187,18 @@ conceptualContent:
       text: 混合式 Azure AD 已加入裝置
   - title: 管理性
     links:
-    - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+    - url: /azure/azure-arc/data/overview
       itemType: overview
-      text: 已啟用 Azure Arc 的資料服務 (個人預覽版註冊)
+      text: 已啟用 Azure Arc 的資料服務 (預覽)
     - url: /azure/azure-arc/kubernetes/
       itemType: overview
       text: 已啟用 Azure Arc 的 Kubernetes (預覽)
     - url: /azure/azure-arc/servers
       itemType: overview
-      text: 已啟用 Azure Arc 的伺服器 (預覽)
+      text: 已啟用 Azure Arc 的伺服器
+    - url: /sql/sql-server/azure-arc/overview
+      itemType: overview
+      text: 已啟用 Azure Arc 的 SQL Server (預覽)
     - url: /azure/automation/
       itemType: overview
       text: Azure 自動化
@@ -216,6 +225,9 @@ conceptualContent:
     - url: /azure/expressroute/
       itemType: overview
       text: Azure ExpressRoute
+    - url: /azure/networking/azure-orbital-overview
+      itemType: overview
+      text: Azure Orbital (預覽)
     - url: /azure/load-balancer/
       itemType: overview
       text: Azure Load Balancer
@@ -306,6 +318,8 @@ additionalContent:
         text: Azure 混合式部落格
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure 混合式功能
+      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
+        text: Azure Hybrid 虛擬活動
       - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
         text: 客戶 Azure Stack Hub 解決方案
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
