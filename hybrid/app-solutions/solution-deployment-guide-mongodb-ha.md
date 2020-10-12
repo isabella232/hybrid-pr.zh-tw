@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: f6064aaa1087a3c0cfc26e09371e81752c777edb
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: def9abaa2a7231648f11453f66119399be015a4d
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477264"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852502"
 ---
 # <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>將高度可用的 MongoDB 解決方案部署到 Azure 和 Azure Stack Hub
 
@@ -105,5 +105,5 @@ ms.locfileid: "86477264"
 ## <a name="next-steps"></a>後續步驟
 
 - 若您在災害復原 Azure Stack Hub 上啟用了 Jump Box 虛擬機器，就可以透過 SSH 連線並安裝 Mongo CLI 與 MongoDB 叢集互動。 若要深入了解如何與 MongoDB 互動，請參閱 [Mongo Shell](https://docs.mongodb.com/manual/mongo/)。
-- 若要深入了解混合式雲端應用程式，請參閱[混合式雲端解決方案](https://aka.ms/azsdevtutorials)。
+- 若要深入了解混合式雲端應用程式，請參閱[混合式雲端解決方案](/azure-stack/user/)。
 - 修改 [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns) 上的這份範例程式碼。

@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 85b859457b9b54a973c5fc23329b927212b60a07
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
+ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477077"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91852468"
 ---
 # <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>將 SQL Server 2016 可用性群組部署至 Azure 和 Azure Stack Hub
 
@@ -106,5 +106,5 @@ ms.locfileid: "86477077"
 ## <a name="next-steps"></a>後續步驟
 
 - 使用 SQL Server Management Studio 手動容錯移轉至叢集。 請參閱[執行 Always On 可用性群組的強制手動容錯移轉 (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
-- 深入了解混合式雲端應用程式。 請參閱[混合式雲端解決方案](https://aka.ms/azsdevtutorials)。
+- 深入了解混合式雲端應用程式。 請參閱[混合式雲端解決方案](/azure-stack/user/)。
 - 使用您自己的資料，或修改 [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns) 上的這份範例程式碼。
