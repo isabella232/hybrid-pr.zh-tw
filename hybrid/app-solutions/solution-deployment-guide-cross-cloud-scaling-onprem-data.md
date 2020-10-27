@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 6de35cb55c4c35a2a9927f9ffc2516ccb00cd89f
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: ecc42a94e2c59531b2a2e933772b0d8ce8c58609
+ms.sourcegitcommit: 0d5b5336bdb969588d0b92e04393e74b8f682c3b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477315"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353473"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>使用內部部署資料部署可跨雲端調整的混合式應用程式
 
@@ -37,7 +37,7 @@ ms.locfileid: "86477315"
 > - 設定全域 Azure 和 Azure Stack Hub 之間的自動流量切換。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![混合式支柱圖](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub 是 Azure 的延伸模組。 Azure Stack Hub 可將雲端運算的靈活性與創新能力導入您的內部部署環境中，並啟用獨特的混合式雲端，讓您能夠隨處建置及部署混合式應用程式。  
 > 
 > [混合式應用程式設計考量](overview-app-design-considerations.md)一文檢閱了設計、部署和操作混合式應用程式時的軟體品質要素 (放置、延展性、可用性、復原、管理性和安全性)。 這些設計考量有助於您設計出最佳的混合式應用程式，減少生產環境可能會遇到的挑戰。
@@ -76,11 +76,11 @@ ms.locfileid: "86477315"
 
     ![Azure Stack Hub Marketplace](media/solution-deployment-guide-hybrid/image1.png)
 
-3. 在 [Marketplace]  中選取 [計算]  ，然後選擇 [其他]  。 在 [其他]  底下，選取**免費的 SQL Server 授權：Windows Server 上的 SQL Server 2017 Developer** 映像。
+3. 在 [Marketplace]  中選取 [計算]  ，然後選擇 [其他]  。 在 [其他]  底下，選取 **免費的 SQL Server 授權：Windows Server 上的 SQL Server 2017 Developer** 映像。
 
     ![在 Azure Stack Hub 使用者入口網站中選取虛擬機器映像](media/solution-deployment-guide-hybrid/image2.png)
 
-4. 在**免費的 SQL Server 授權：Windows Server 上的 SQL Server 2017 Developer** 上，選取 [建立]  。
+4. 在 **免費的 SQL Server 授權：Windows Server 上的 SQL Server 2017 Developer** 上，選取 [建立]  。
 
 5. 在 [基本 > 設定基本設定]  上，提供虛擬機器 (VM) 的 [名稱]  、SQL Server SA 的 [使用者名稱]  ，和 SA 的 [密碼]  。  從 [訂用帳戶]  下拉式清單中，選取要部署到的訂用帳戶。 對於 [資源群組]  ，使用 [選擇現有項目]  ，並將 VM 放在與 Azure Stack Hub Web 應用程式相同的資源群組中。
 
@@ -90,16 +90,16 @@ ms.locfileid: "86477315"
 
 7. 在 [設定 > 設定選用功能]  下方，進行下列設定：
 
-   - **儲存體帳戶**：如有需要，請建立新帳戶。
-   - **虛擬網路**：
+   - **儲存體帳戶** ：如有需要，請建立新帳戶。
+   - **虛擬網路** ：
 
      > [!Important]  
      > 請確定您的 SQL Server VM 部署在與 VPN 閘道相同的虛擬網路上。
 
-   - **公用 IP 位址**：請使用預設設定。
-   - **網路安全性群組**︰(NSG)。 建立新的 NSG。
-   - **擴充功能和監視**：請保留預設設定值。
-   - **診斷儲存體帳戶**：如有需要，請建立新帳戶。
+   - **公用 IP 位址** ：請使用預設設定。
+   - **網路安全性群組** ︰(NSG)。 建立新的 NSG。
+   - **擴充功能和監視** ：請保留預設設定值。
+   - **診斷儲存體帳戶** ：如有需要，請建立新帳戶。
    - 選取 [確定]  以儲存您的設定。
 
      ![在 Azure Stack Hub 使用者入口網站中設定選用 VM 功能](media/solution-deployment-guide-hybrid/image4.png)
@@ -107,7 +107,7 @@ ms.locfileid: "86477315"
 8. 在 [SQL Server 設定]  下方，進行下列設定：
 
    - 針對 [SQL 連線能力]  ，選取 [公用 (網際網路)]  。
-   - 將 [連接埠]  保留為預設值 **1433**。
+   - 將 [連接埠]  保留為預設值 **1433** 。
    - 針對 [SQL 驗證]  ，選取 [啟用]  。
 
      > [!Note]  
@@ -153,7 +153,7 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 在混合式網路中，Azure 端的虛擬網路閘道必須允許點對站連線，以便與 Azure App Service 整合。
 
-1. 在 Azure 中，移至 [虛擬網路閘道] 頁面。 在 [設定]  下方，選取 [點對站設定]  。
+1. 在 Azure 入口網站中，前往虛擬網路閘道頁面。 在 [設定]  下方，選取 [點對站設定]  。
 
     ![Azure 虛擬網路閘道中的點對站選項](media/solution-deployment-guide-hybrid/image8.png)
 
@@ -192,7 +192,7 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 必須設定 Azure Stack Hub 虛擬網路中的區域網路閘道，以路由來自 App Service 點對站位址範圍的流量。
 
-1. 在 Azure Stack Hub 中，移至 [區域網路閘道]  。 在 [設定]  下方，選取 [設定]  。
+1. 在 Azure Stack Hub 入口網站中，移至 [區域網路閘道]。 在 [設定]  下方，選取 [設定]  。
 
     ![Azure Stack Hub 區域網路閘道中的閘道設定選項](media/solution-deployment-guide-hybrid/image14.png)
 
@@ -212,19 +212,19 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 由於流量管理員需倚賴 DNS CNAME，因此子網域必須能夠正確地將流量路由至端點。 如需與 DNS 記錄和網域之間的對應有關的詳細資訊，請參閱[使用流量管理員對應網域](/azure/app-service/web-sites-traffic-manager-custom-domain-name)。
 
-針對 Azure 端點，您必須建立可讓使用者用來存取 Web 應用程式的子網域。 在本教學課程中可以使用 **app.northwind.com**，但您應根據自己的網域自訂此值。
+針對 Azure 端點，您必須建立可讓使用者用來存取 Web 應用程式的子網域。 在本教學課程中可以使用 **app.northwind.com** ，但您應根據自己的網域自訂此值。
 
-您也必須以 Azure Stack Hub 端點的 A 記錄建立子網域。 您可以使用 **azurestack.northwind.com**。
+您也必須以 Azure Stack Hub 端點的 A 記錄建立子網域。 您可以使用 **azurestack.northwind.com** 。
 
 ### <a name="configure-a-custom-domain-in-azure"></a>在 Azure 中設定自訂網域
 
-1. 藉由[將 CNAME 對應至 Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)，以將 **app.northwind.com** 主機名稱新增至 Azure Web 應用程式。
+1. 藉由 [將 CNAME 對應至 Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)，以將 **app.northwind.com** 主機名稱新增至 Azure Web 應用程式。
 
 ### <a name="configure-custom-domains-in-azure-stack-hub"></a>在 Azure Stack Hub 中設定自訂網域
 
-1. 藉由[將 A 記錄對應至 Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record)，以將 **azurestack.northwind.com** 主機名稱新增至 Azure Stack Hub Web 應用程式。 對於 App Service 應用程式，請使用網際網路可路由的 IP 位址。
+1. 藉由 [將 A 記錄對應至 Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-an-a-record)，以將 **azurestack.northwind.com** 主機名稱新增至 Azure Stack Hub Web 應用程式。 對於 App Service 應用程式，請使用網際網路可路由的 IP 位址。
 
-2. 藉由[將 CNAME 對應至 Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)，以將 **app.northwind.com** 主機名稱新增至 Azure Stack Hub Web 應用程式。 請使用您在先前的步驟 (1) 中設定的主機名稱作為 CNAME 的目標。
+2. 藉由 [將 CNAME 對應至 Azure App Service](/azure/app-service/app-service-web-tutorial-custom-domain#map-a-cname-record)，以將 **app.northwind.com** 主機名稱新增至 Azure Stack Hub Web 應用程式。 請使用您在先前的步驟 (1) 中設定的主機名稱作為 CNAME 的目標。
 
 ## <a name="configure-ssl-certificates-for-cross-cloud-scaling"></a>設定跨雲端縮放的 SSL 憑證
 
@@ -238,13 +238,13 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 1. 確定您取得的 SSL 憑證適用於您所建立的子網域。 (您也可以使用萬用字元憑證)。
 
-2. 在 Azure 中，依照[將現有的自訂 SSL 憑證繫結至 Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) 一文的**準備您的 Web 應用程式**和**繫結 SSL 憑證**小節所提供的指示操作。 請選取 [以 SNI 為基礎的 SSL]  作為 [SSL 類型]  。
+2. 在 Azure 入口網站中，依照 [將現有的自訂 SSL 憑證繫結至 Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) 一文的 **準備您的 Web 應用程式** 和 **繫結 SSL 憑證** 小節所提供的指示操作。 請選取 [以 SNI 為基礎的 SSL]  作為 [SSL 類型]  。
 
-3. 將所有流量重新都導向至 HTTPS 連接埠。 請依照[將現有的自訂 SSL 憑證繫結至 Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) 一文的**強制執行 HTTPS** 小節所提供的指示操作。
+3. 將所有流量重新都導向至 HTTPS 連接埠。 請依照 [將現有的自訂 SSL 憑證繫結至 Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) 一文的 **強制執行 HTTPS** 小節所提供的指示操作。
 
 若要將 SSL 新增至 Azure Stack Hub：
 
-1. 重複您用於 Azure 的步驟 1-3。
+1. 使用 Azure Stack Hub 入口網站，重複您用於 Azure 的步驟 1-3。
 
 ## <a name="configure-and-deploy-the-web-app"></a>設定及部署 Web 應用程式
 
@@ -300,7 +300,7 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
 ### <a name="enable-automatic-scale-out"></a>啟用自動相應放大
 
-1. 在 Azure 中，找出要擴增的網站所使用的 App Service 方案，然後選取 [擴增 (App Service 方案)]  。
+1. 在 Azure 入口網站中，找出要擴增的網站所使用的 App Service 方案，然後選取 [擴增 (App Service 方案)]。
 
     ![擴增 Azure App Service](media/solution-deployment-guide-hybrid/image16.png)
 
@@ -308,7 +308,7 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
     ![在 Azure App Service 中啟用自動調整](media/solution-deployment-guide-hybrid/image17.png)
 
-3. 輸入 [自動調整設定名稱]  的名稱。 選取 [依據計量調整規模]  ，作為**預設**自動調整規則。 將 [執行個體限制]  設為**最小值：1**、**最大值：10** 和**預設值：1**。
+3. 輸入 [自動調整設定名稱]  的名稱。 選取 [依據計量調整規模]  ，作為 **預設** 自動調整規則。 將 [執行個體限制]  設為 **最小值：1** 、 **最大值：10** 和 **預設值：1** 。
 
     ![在 Azure App Service 中設定自動調整](media/solution-deployment-guide-hybrid/image18.png)
 
@@ -324,16 +324,16 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
 3. 在 [運算子]  下方，選取 [大於]  。
 
-   - 將 [閾值]  設為 **50**。
-   - 將 [持續時間]  設為 **10**。
+   - 將 [閾值]  設為 **50** 。
+   - 將 [持續時間]  設為 **10** 。
 
 #### <a name="action"></a>動作
 
 1. 在 [作業]  下方，選取 [將計數增加]  。
 
-2. 將 [執行個體計數]  設為 **2**。
+2. 將 [執行個體計數]  設為 **2** 。
 
-3. 將 [緩和時間]  設為 **5**。
+3. 將 [緩和時間]  設為 **5** 。
 
 4. 選取 [新增]  。
 
@@ -348,7 +348,7 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
 當流量減少時，Azure Web 應用程式可以自動減少作用中的執行個體數目，以降低成本。 此動作的主動性低於相應放大，且可盡量降低應用程式使用者所受到的影響。
 
-1. 移至**預設**擴增條件，然後選取 [+ 新增規則]  。 請為規則使用下列準則和動作。
+1. 移至 **預設** 擴增條件，然後選取 [+ 新增規則]  。 請為規則使用下列準則和動作。
 
 #### <a name="criteria"></a>準則
 
@@ -358,21 +358,21 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
 3. 在 [運算子]  下方，選取 [小於]  。
 
-   - 將 [閾值]  設為 **30**。
-   - 將 [持續時間]  設為 **10**。
+   - 將 [閾值]  設為 **30** 。
+   - 將 [持續時間]  設為 **10** 。
 
 #### <a name="action"></a>動作
 
 1. 在 [作業]  下方，選取 [將計數減少]  。
 
-   - 將 [執行個體計數]  設為 **1**。
-   - 將 [緩和時間]  設為 **5**。
+   - 將 [執行個體計數]  設為 **1** 。
+   - 將 [緩和時間]  設為 **5** 。
 
 2. 選取 [新增]  。
 
 ## <a name="create-a-traffic-manager-profile-and-configure-cross-cloud-scaling"></a>建立流量管理員設定檔並設定跨雲端縮放
 
-在 Azure 中建立流量管理員設定檔，然後設定端點以啟用跨雲端縮放。
+使用 Azure 入口網站中建立流量管理員設定檔，然後設定端點以啟用跨雲端縮放。
 
 ### <a name="create-traffic-manager-profile"></a>建立流量管理員設定檔
 
@@ -380,7 +380,7 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 2. 選取 [網路功能]  。
 3. 選取 [流量管理員設定檔]  並進行下列設定：
 
-   - 在 [名稱]  中，輸入設定檔的名稱。 此名稱在 trafficmanager.net 區域內**必須**是唯一的，並且用來建立新的 DNS 名稱 (例如 northwindstore.trafficmanager.net)。
+   - 在 [名稱]  中，輸入設定檔的名稱。 此名稱在 trafficmanager.net 區域內 **必須** 是唯一的，並且用來建立新的 DNS 名稱 (例如 northwindstore.trafficmanager.net)。
    - 針對 [路由方法]  ，選取 [加權]  。
    - 針對 [訂用帳戶]  ，選取您要用來建立此設定檔的訂用帳戶。
    - 在 [資源群組]  中，為此設定檔建立新的資源群組。
@@ -403,9 +403,9 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 4. 在 [新增端點]  中，使用 Azure Stack Hub 的下列設定：
 
    - 針對 [類型]  ，選取 [外部端點]  。
-   - 輸入端點的**名稱**。
+   - 輸入端點的 **名稱** 。
    - 針對 [完整網域名稱 (FQDN) 或 IP]  ，輸入 Azure Stack Hub Web 應用程式的外部 URL。
-   - 將 [權數]  保留為預設值 **1**。 此權數會使所有流量都傳送至此端點 (如果其狀況良好)。
+   - 將 [權數]  保留為預設值 **1** 。 此權數會使所有流量都傳送至此端點 (如果其狀況良好)。
    - 將 [新增為已停用]  保持為未核取。
 
 5. 選取 [確定]  以儲存 Azure Stack Hub 端點。
@@ -417,11 +417,11 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 3. 在 [新增端點]  上，使用 Azure 的下列設定：
 
    - 針對 [類型]  ，選取 [Azure 端點]  。
-   - 輸入端點的**名稱**。
+   - 輸入端點的 **名稱** 。
    - 針對 [目標資源類型]  ，選取 [App Service]  。
    - 針對 [目標資源]  選取 [選擇 App Service]  ，以顯示相同訂用帳戶中的 Web Apps 清單。
    - 在 [資源]  中，挑選您想要新增為第一個端點的應用程式服務。
-   - 針對 [權數]  ，選取 **2**。 此設定會使所有的流量在主要端點狀況不良時均傳送至此端點；或者，您可以使用經觸發會重新導向流量的規則/警示。
+   - 針對 [權數]  ，選取 **2** 。 此設定會使所有的流量在主要端點狀況不良時均傳送至此端點；或者，您可以使用經觸發會重新導向流量的規則/警示。
    - 將 [新增為已停用]  保持為未核取。
 
 4. 選取 [確定]  以儲存 Azure 端點。
@@ -430,15 +430,15 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
 ![流量管理員設定檔中的端點](media/solution-deployment-guide-hybrid/image20.png)
 
-## <a name="set-up-application-insights-monitoring-and-alerting"></a>設定 Application Insights 監視和警示
+## <a name="set-up-application-insights-monitoring-and-alerting-in-azure"></a>在 Azure 中設定 Application Insights 監視和警示
 
 Azure Application Insights 可讓您根據自己設定的條件來監視應用程式及傳送警示。 其範例包括：應用程式無法使用、發生失敗狀況，或顯示效能問題。
 
-您將使用 Application Insights 計量來建立警示。 當這些警示觸發時，Web 應用程式執行個體將會自動從 Azure Stack Hub 切換至 Azure 以擴增，然後再切換回 Azure Stack Hub 以縮減。
+您將使用 Azure Application Insights 計量來建立警示。 當這些警示觸發時，Web 應用程式執行個體將會自動從 Azure Stack Hub 切換至 Azure 以擴增，然後再切換回 Azure Stack Hub 以縮減。
 
 ### <a name="create-an-alert-from-metrics"></a>建立以計量為依據的警示
 
-請移至本教學課程的資源群組，然後選取 Application Insights 執行個體以開啟 **Application Insights**。
+在 Azure 入口網站中，請移至本教學課程的資源群組，然後選取 Application Insights 執行個體以開啟 **Application Insights** 。
 
 ![Application Insights](media/solution-deployment-guide-hybrid/image21.png)
 
@@ -457,7 +457,7 @@ Azure Application Insights 可讓您根據自己設定的條件來監視應用�
 
 4. 針對 [計量]  ，選取 [要求率]  。
 5. 針對 [條件]  ，選取 [大於]  。
-6. 輸入**2** 作為 [閾值]  。
+6. 輸入 **2** 作為 [閾值]  。
 7. 針對 [期間]  ，選取 [過去 5 分鐘內]  。
 8. 在 [通知方式]  下方：
    - 核取 [電子郵件擁有者、參與者和讀取者]  的核取方塊。
@@ -478,7 +478,7 @@ Azure Application Insights 可讓您根據自己設定的條件來監視應用�
 
 4. 針對 [計量]  ，選取 [要求率]  。
 5. 針對 [條件]  ，選取 [小於]  。
-6. 輸入**2** 作為 [閾值]  。
+6. 輸入 **2** 作為 [閾值]  。
 7. 針對 [期間]  ，選取 [過去 5 分鐘內]  。
 8. 在 [通知方式]  下方：
    - 核取 [電子郵件擁有者、參與者和讀取者]  的核取方塊。
