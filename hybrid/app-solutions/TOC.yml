@@ -1,8 +1,8 @@
-- name: Azure Hybrid 文件
+- name: 混合式和多重雲端解決方案文件
   href: index.yml
 - name: 概觀
   items:
-    - name: 混合模式和解決方案範例
+    - name: 模式和解決方案範例
       href: overview-patterns-solution-examples.md
 - name: 模式
   items:
@@ -58,7 +58,7 @@
       href: 'https://aka.ms/edgetrainingdeploy'
 - name: 概念
   items:
-    - name: 混合式應用程式設計考量
+    - name: 應用程式設計考量
       href: overview-app-design-considerations.md
 - name: 相關參考
   items:

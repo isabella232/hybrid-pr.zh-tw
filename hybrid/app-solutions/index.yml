@@ -1,32 +1,32 @@
 ### YamlMime:Landing
-title: Azure 混式模式和解決方案文件
-summary: 了解如何在您的應用程式開發中運用混合模式和解決方案範例。 Azure 和 Azure Stack 可以開發混合式應用程式，並建置於一套智慧型雲端和智慧邊緣服務上。
+title: Azure 混合式和多重雲端模式和解決方案文件
+summary: 了解如何在您的應用程式開發中，運用混合式和多重雲端模式和解決方案範例，建置一套智慧型雲端和智慧邊緣服務。
 metadata:
-  title: Azure 混式模式和解決方案文件
-  description: 了解如何在您的應用程式開發中運用混合模式和解決方案範例。 Azure 和 Azure Stack 可以開發混合式應用程式，並建置於一套智慧型雲端和智慧邊緣服務上。
+  title: Azure 混合式和多重雲端模式和解決方案文件
+  description: 了解如何在您的應用程式開發中，運用混合式和多重雲端模式和解決方案範例，建置一套智慧型雲端和智慧邊緣服務。
   ms.service: azure-stack
   ms.topic: landing-page
   author: BryanLa
   ms.author: bryanla
   ms.date: 10/31/2019
-  ms.openlocfilehash: 923e8aa2af78b5d23ba1f25d8b0eb5b80edc4f0a
-  ms.sourcegitcommit: bb3e40b210f86173568a47ba18c3cc50d4a40607
+  ms.openlocfilehash: f51256c555011744f847e457b8bac46a1b5c4b14
+  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/17/2020
-  ms.locfileid: "84909629"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94872969"
 landingContent:
-- title: 關於混合模式和解決方案
+- title: 關於混合式和多重雲端模式和解決方案
   linkLists:
   - linkListType: overview
     links:
-    - text: 什麼是混合模式和解決方案範例？
+    - text: 什麼是模式和解決方案範例？
       url: overview-patterns-solution-examples.md
   - linkListType: concept
     links:
-    - text: 混合式應用程式設計考量
+    - text: 應用程式設計考量
       url: overview-app-design-considerations.md
-- title: 探索混合式模式
+- title: 探索混合式和多重雲端模式
   linkLists:
   - linkListType: architecture
     links:
@@ -38,7 +38,7 @@ landingContent:
       url: pattern-retail-footfall-detection.md
     - text: 異地分散式應用程式
       url: pattern-geo-distributed.md
-- title: 部署混合式解決方案範例
+- title: 部署混合式和多重雲端解決方案範例
   linkLists:
   - linkListType: tutorial
     links:
