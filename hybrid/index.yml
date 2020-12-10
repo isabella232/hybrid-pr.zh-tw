@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 11/16/2020
-  ms.openlocfilehash: 23c1d6e1444e637a8e012b2628d3dfbafe903b3e
-  ms.sourcegitcommit: 40117c1f26640d276fcdb9c760bb4e508c0c6003
+  ms.openlocfilehash: 2ca6a085610915882ad4d875b97b6f9ab53b1ed2
+  ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/18/2020
-  ms.locfileid: "94873018"
+  ms.lasthandoff: 12/09/2020
+  ms.locfileid: "96901519"
 highlightedContent:
   items:
   - title: Azure Modular Datacenter 簡介
@@ -77,7 +77,7 @@ conceptualContent:
     links:
     - url: /azure/bot-service
       itemType: overview
-      text: Azure Bot Service
+      text: Azure Bot 服務
     - url: /azure/search/
       itemType: overview
       text: Azue 認知搜尋
@@ -134,7 +134,7 @@ conceptualContent:
       text: Azure DevOps for CI/CD
     - url: /azure/event-hubs/
       itemType: overview
-      text: Azure 事件中樞
+      text: Azure 事件中心
     - url: /azure/azure-functions/
       itemType: overview
       text: Azure Functions
@@ -292,6 +292,8 @@ additionalContent:
         text: Footfall 偵測 (零售)
       - url: ./app-solutions/pattern-geo-distributed.md
         text: 異地分散式應用程式
+      - url: ./app-solutions/pattern-highly-available-kubernetes.md
+        text: 高可用性 Kubernetes 叢集
     - title: 部署應用程式解決方案範例
       links:
       - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
@@ -302,6 +304,8 @@ additionalContent:
         text: Footfall 偵測 (零售)
       - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
         text: 異地分散式應用程式
+      - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+        text: 高可用性 Kubernetes 叢集
   - title: 評估與學習資源
     items:
     - title: Azure Stack
