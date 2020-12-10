@@ -26,6 +26,8 @@
           href: pattern-cross-cloud-scale-onprem-data.md
         - name: Footfall 偵測 (零售)
           href: pattern-retail-footfall-detection.md
+        - name: 高可用性 Kubernetes 叢集
+          href: pattern-highly-available-kubernetes.md
         - name: 在邊緣進行缺貨偵測
           href: pattern-out-of-stock-at-edge.md
 - name: 解決方案部署指南
@@ -40,6 +42,8 @@
       href: solution-deployment-guide-retail-footfall-detection.md
     - name: 異地分散式應用程式
       href: solution-deployment-guide-geo-distributed.md
+    - name: 高可用性 Kubernetes 叢集
+      href: solution-deployment-guide-highly-available-kubernetes.md
     - name: 混合式連線
       href: solution-deployment-guide-connectivity.md
     - name: 混合式身分識別
