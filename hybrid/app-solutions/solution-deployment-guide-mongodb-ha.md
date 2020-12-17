@@ -7,14 +7,14 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: def9abaa2a7231648f11453f66119399be015a4d
-ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
+ms.openlocfilehash: 624f032def509d8e42d55807d72176e5fce85910
+ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91852502"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96901502"
 ---
-# <a name="deploy-a-highly-available-mongodb-solution-to-azure-and-azure-stack-hub"></a>將高度可用的 MongoDB 解決方案部署到 Azure 和 Azure Stack Hub
+# <a name="deploy-a-highly-available-mongodb-solution-across-two-azure-stack-hub-environments"></a>將高度可用的 MongoDB 解決方案部署到兩個 Azure Stack Hub 環境
 
 這篇文章會逐步引導您了解在跨兩個 Azure Stack Hub 環境中，透過災害復原 (DR) 網站自動部署基本的高度可用 (HA) MongoDB 叢集。 若要深入了解 MongoDB 和高可用性，請參閱[複本集集合成員](https://docs.mongodb.com/manual/core/replica-set-members/)。
 

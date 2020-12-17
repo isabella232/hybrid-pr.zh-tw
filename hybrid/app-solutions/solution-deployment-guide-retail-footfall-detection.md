@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5f2e18e164e54f60b1bb7a14026a0c75c7d7ce69
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
+ms.openlocfilehash: 2177b32474dea695967e197acbd4bc1e18422d7b
+ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477162"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96901485"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub 來部署 AI 型客流量偵測解決方案
 
@@ -26,7 +26,7 @@ ms.locfileid: "86477162"
 > - 在邊緣使用自訂視覺 AI 開發套件進行推斷。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![混合式支柱圖](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub 是 Azure 的延伸模組。 Azure Stack Hub 可將雲端運算的靈活性與創新能力導入您的內部部署環境中，並啟用獨特的混合式雲端，讓您能夠隨處建置及部署混合式應用程式。  
 > 
 > [混合式應用程式設計考量](overview-app-design-considerations.md)一文檢閱了設計、部署和操作混合式應用程式時的軟體品質要素 (放置、延展性、可用性、復原、管理性和安全性)。 這些設計考量有助於您設計出最佳的混合式應用程式，減少生產環境可能會遇到的挑戰。
@@ -44,7 +44,7 @@ ms.locfileid: "86477162"
 - 在您的目錄中建立兩個服務主體：
   - 一個設定為與 Azure 資源搭配使用，並具備 Azure 訂用帳戶範圍的存取權。
   - 一個設定為與 Azure Stack Hub 資源搭配使用，並具備 Azure Stack Hub 訂用帳戶範圍的存取權。
-  - 若要深入了解建立服務主體及授權存取的相關資訊，請參閱[使用應用程式身分識別來存取資源](/azure-stack/operator/azure-stack-create-service-principals.md)。 如果您偏好使用 Azure CLI，請參閱[使用 Azure CLI 建立 Azure 服務主體](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest)。
+  - 若要深入了解建立服務主體及授權存取的相關資訊，請參閱[使用應用程式身分識別來存取資源](/azure-stack/operator/azure-stack-create-service-principals.md)。 如果您偏好使用 Azure CLI，請參閱[使用 Azure CLI 建立 Azure 服務主體](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true)。
 - 在 Azure 或 Azure Stack Hub 中部署 Azure 認知服務。
   - 首先，請[深入了解認知服務](https://azure.microsoft.com/services/cognitive-services/)。
   - 接著請造訪[將 Azure 認知服務部署至 Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md)，以在 Azure Stack Hub 上部署認知服務。 您必須先註冊才能存取預覽版。
@@ -194,5 +194,5 @@ porter uninstall footfall-camera –tag intelligentedge/footfall-camera-deployme
 
 ## <a name="next-steps"></a>後續步驟
 
-- 深入了解 [混合式應用程式設計考量].(overview-app-design-considerations.md)
+- 深入了解[混合式應用程式設計考量](overview-app-design-considerations.md)
 - 檢閱 [GitHub 上此範例的程式碼](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/footfall-analysis)並提出改進建議。

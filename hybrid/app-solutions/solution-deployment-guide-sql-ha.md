@@ -7,14 +7,14 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2c20d621247ec8e1278feb092586232cc08d5480
-ms.sourcegitcommit: 485a1f97fa1579364e2be1755cadfc5ea89db50e
+ms.openlocfilehash: 0f857515a44ece7f967ade3dee8f493481709851
+ms.sourcegitcommit: c890f2c5e5e5f9f93c921f02dd1a6ca5026d5289
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91852468"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091797"
 ---
-# <a name="deploy-a-sql-server-2016-availability-group-to-azure-and-azure-stack-hub"></a>將 SQL Server 2016 可用性群組部署至 Azure 和 Azure Stack Hub
+# <a name="deploy-a-sql-server-2016-availability-group-across-two-azure-stack-hub-environments"></a>將 SQL Server 2016 可用性群組部署至兩個 Azure Stack Hub 環境
 
 這篇文章會逐步引導您了解在跨兩個 Azure Stack Hub 環境中，透過非同步的災害復原 (DR) 網站自動部署基本的高度可用 (HA) SQL Server 2016 Enterprise 叢集。 若要深入了解 SQL Server 2016 和高可用性，請參閱[Always On 可用性群組：高可用性和災害復原解決方案](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016)。
 
