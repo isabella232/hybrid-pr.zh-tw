@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 11/16/2020
-  ms.openlocfilehash: e56d862007c6fdf6d1754bdba78b11b713ebe56a
-  ms.sourcegitcommit: e4ecad490940e5951739b074c36188886e8f426c
+  ms.openlocfilehash: 880bbebe9b63a193b49815a4f2089f13ffc101e9
+  ms.sourcegitcommit: 97aa7e255491bee3a5a9680d9e622c8ffc0a8179
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/11/2021
-  ms.locfileid: "98104220"
+  ms.lasthandoff: 01/14/2021
+  ms.locfileid: "98211204"
 highlightedContent:
   items:
   - title: Azure Modular Datacenter 簡介
@@ -54,12 +54,14 @@ productDirectory:
   - title: 適用於託管、內部部署和行動資料中心的私人雲端平台。
     imageSrc: media/index/azure-stack-hub.svg
     links:
+    - url: /azure-stack/mdc
+      text: Azure Modular Datacenter
+    - url: /azure-stack/hci
+      text: Azure Stack HCI
     - url: /azure-stack#azure-stack-hub
       text: Azure Stack Hub
-    - url: /azure-stack#azure-stack-hub
-      text: Azure Modular Data Center
-    - url: /azure-stack#azure-stack-hci
-      text: Azure Stack HCI
+    - url: /azure-stack/ruggedized
+      text: Azure Stack Hub 耐用
   - title: 適用於裝置的智慧邊緣平台。
     imageSrc: media/index/intelligent.svg
     links:
@@ -77,7 +79,7 @@ conceptualContent:
     links:
     - url: /azure/bot-service
       itemType: overview
-      text: Azure Bot 服務
+      text: Azure Bot Service
     - url: /azure/search/
       itemType: overview
       text: Azue 認知搜尋
@@ -134,7 +136,7 @@ conceptualContent:
       text: Azure DevOps for CI/CD
     - url: /azure/event-hubs/
       itemType: overview
-      text: Azure 事件中樞
+      text: Azure 事件中心
     - url: /azure/azure-functions/
       itemType: overview
       text: Azure Functions
