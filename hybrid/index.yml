@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 03/09/2021
-  ms.openlocfilehash: 218f52c27dee54dd4265a9c1eebc6de330bd6154
-  ms.sourcegitcommit: a5851a7351c39249a58da8d0cf121bbf0b306dca
+  ms.openlocfilehash: 59508b4cce80dd3a18a3e36feef6690290e26168
+  ms.sourcegitcommit: 25bfa6f85c1295ecbaf24e812ccebf1b7220bef8
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/10/2021
-  ms.locfileid: "102606188"
+  ms.lasthandoff: 03/16/2021
+  ms.locfileid: "103600653"
 highlightedContent:
   items:
   - title: Ignite 2021：混合式會話
@@ -336,12 +336,16 @@ additionalContent:
       links:
       - url: /learn/modules/align-requirements-in-azure/
         text: 使用 Azure 中的雲端類型和服務模型對應需求
+      - url: /azure/architecture/browse/?azure_categories=hybrid
+        text: Azure 混合式架構
       - url: https://azure.microsoft.com/overview/azure-hybrid/
         text: Azure 混合式功能
       - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
         text: Azure Hybrid 虛擬活動
+      - url: /azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview
+        text: 雲端採用架構-混合式和多重雲端案例
       - url: /learn/modules/intro-to-azure-hybrid-services/
-        text: Azure 混合式雲端簡介
+        text: Azure 混合式雲端服務簡介
       - url: https://events.microsoft.com/
         text: Microsoft 事件目錄
       - url: /learn
@@ -350,6 +354,10 @@ additionalContent:
       links:
       - url: /learn/modules/azure-sentinel-deploy-configure/
         text: 部署 Azure Sentinel 並連線資料來源
+      - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+        text: 使用 Azure 轉送安全地公開混合式服務
+      - url: /learn/modules/implement-manage-hybrid-identity/
+        text: 執行和管理混合式身分識別
       - url: /learn/modules/implement-hybrid-identity-windows-server/
         text: 使用 Windows Server 實作混合式身分識別
       - url: /learn/modules/intro-to-azure-sentinel/
@@ -358,16 +366,18 @@ additionalContent:
         text: Windows Server 混合式雲端管理、監視和安全性
     - title: 管理
       links:
-      - url: https://github.com/likamrat/azure_arc
+      - url: https://azurearcjumpstart.io/
         text: Azure Arc 快速入門手冊
-      - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
-        text: 高可用性和災害復原策略
-      - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
-        text: 高可用性與災害復原的 IaaS 和 PaaS 平台工具
+      - url: /learn/browse/?terms=%22%20Arc%20%22
+        text: Azure Arc 學習模組
+      - url: /describe-high-availability-disaster-recovery-strategies/
+        text: 描述高可用性和嚴重損壞修復策略
+      - url: /learn/browse/?terms="disaster%20recovery"
+        text: 嚴重損壞修復學習模組
+      - url: /learn/browse/?terms="high%20availability"
+        text: 高可用性學習模組
       - url: /learn/modules/intro-to-azure-arc/
         text: Azure Arc 簡介
-      - url: /learn/modules/manage-hybrid-workloads-azure-arc/
-        text: 使用 Azure Arc 管理混合式工作負載
       - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
         text: 監視 Windows Server IaaS 虛擬機器和混合式執行個體
       - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
@@ -388,20 +398,6 @@ additionalContent:
         text: 使用 Windows Server IaaS 實作混合式備份和復原
   - title: 其他資源
     items:
-    - title: 開發人員
-      links:
-      - url: /azure/developer/
-        text: Azure 開發人員文件和工具
-      - url: /azure/architecture/browse/?azure_categories=hybrid
-        text: Azure 混合式架構
-      - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-        text: 適用於 Visual Studio Code 的 Azure IoT 工具
-      - url: /samples/browse/
-        text: 程式碼範例瀏覽器
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-        text: 視覺 AI 開發人員套件
-      - url: /visualstudio/azure/
-        text: Visual Studio Azure 開發
     - title: 一般
       links:
       - url: https://azure.microsoft.com/blog/topics/hybrid/
@@ -412,7 +408,7 @@ additionalContent:
         text: 客戶 Azure Stack Hub 解決方案
       - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
         text: 客戶混合式雲端故事
-    - title: 說明 + 支援
+    - title: 支援
       links:
       - url: https://azure.microsoft.com/support/options/
         text: Azure 支援
@@ -422,3 +418,15 @@ additionalContent:
         text: Microsoft Q&A 論壇
       - url: https://stackoverflow.com/
         text: 堆疊溢位
+    - title: 技術
+      links:
+      - url: /azure/developer/
+        text: Azure 開發人員文件和工具
+      - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+        text: 適用於 Visual Studio Code 的 Azure IoT 工具
+      - url: /samples/browse/
+        text: 程式碼範例瀏覽器
+      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+        text: 視覺 AI 開發人員套件
+      - url: /visualstudio/azure/
+        text: Visual Studio Azure 開發
