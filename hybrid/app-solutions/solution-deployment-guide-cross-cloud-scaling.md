@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 5ae6c4323324fa104cd0e5c7b5198492be14b8eb
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
-ms.translationtype: HT
+ms.openlocfilehash: ed2ad5bed8f4bd80d4a40ab7600842d5544ff97d
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886810"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895409"
 ---
 # <a name="deploy-an-app-that-scales-cross-cloud-using-azure-and-azure-stack-hub"></a>部署應用程式，並使用 Azure 與 Azure Stack Hub 來進行跨雲端規模調整
 
@@ -30,7 +30,7 @@ ms.locfileid: "88886810"
 > - 了解如何監視並追蹤您的部署。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![混合式支柱圖](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub 是 Azure 的延伸模組。 Azure Stack Hub 可將雲端運算的靈活性和創新能力導入您的內部部署環境中，並啟用獨特的混合式雲端，讓您能夠隨處建置及部署混合式應用程式。  
 > 
 > [混合式應用程式設計考量](overview-app-design-considerations.md)一文檢閱了設計、部署和操作混合式應用程式時的軟體品質要素 (放置、延展性、可用性、復原、管理性和安全性)。 這些設計考量有助於您設計出最佳的混合式應用程式，減少生產環境可能會遇到的挑戰。
@@ -39,16 +39,16 @@ ms.locfileid: "88886810"
 
 - Azure 訂用帳戶。 如有需要，請在開始之前建立[免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
 - Azure Stack Hub 整合式系統，或 Azure Stack 開發套件 (ASDK) 的部署。
-  - 如需如何安裝 Azure Stack Hub 的指示，請參閱[安裝 ASDK](/azure-stack/asdk/asdk-install.md)。
+  - 如需如何安裝 Azure Stack Hub 的指示，請參閱[安裝 ASDK](/azure-stack/asdk/asdk-install)。
   - 如需 ASDK 部署後自動化指令碼，請移至：[https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
   - 此安裝可能需要幾個小時才能完成。
-- 將 [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) PaaS 服務部署至 Azure Stack Hub。
-- 在 Azure Stack Hub 環境內[建立方案/供應項目](/azure-stack/operator/service-plan-offer-subscription-overview.md)。
-- 在 Azure Stack Hub 環境內[建立租用戶訂用帳戶](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md)。
+- 將 [App Service](/azure-stack/operator/azure-stack-app-service-deploy) PaaS 服務部署至 Azure Stack Hub。
+- 在 Azure Stack Hub 環境內[建立方案/供應項目](/azure-stack/operator/service-plan-offer-subscription-overview)。
+- 在 Azure Stack Hub 環境內[建立租用戶訂用帳戶](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm)。
 - 建立租用戶訂用帳戶中建立 Web 應用程式。 記下新的 Web 應用程式 URL，以供後續使用。
 - 在租用戶訂用帳戶中部署 Azure Pipelines 虛擬機器 (VM)。
 - 需要具有 .NET 3.5 的 Windows Server 2016 VM。 此 VM 將會建置在 Azure Stack Hub 上的租用戶訂用帳戶中，作為私人組建代理程式。
-- 您可以在 Azure Stack Hub Marketplace 中取得[具有 SQL 2017 的 Windows Server 2016 VM 映像](/azure-stack/operator/azure-stack-add-vm-image.md)。 如果無法取得此映像，可與 Azure Stack Hub 操作員合作，以確實地將此映像新增至環境中。
+- 您可以在 Azure Stack Hub Marketplace 中取得[具有 SQL 2017 的 Windows Server 2016 VM 映像](/azure-stack/operator/azure-stack-add-vm-image)。 如果無法取得此映像，可與 Azure Stack Hub 操作員合作，以確實地將此映像新增至環境中。
 
 ## <a name="issues-and-considerations"></a>問題和考量
 
@@ -79,7 +79,7 @@ ms.locfileid: "88886810"
 設定混合式持續整合與持續部署 (CI/CD)，以將 Web 應用程式部署至 Azure 與 Azure Stack Hub，並自動將變更推送至這兩個雲端。
 
 > [!Note]  
-> 需要適當映像摘要整合執行的 Azure Stack Hub (Windows Server 和 SQL) 及 App Service 部署。 如需詳細資訊，請參閱 App Service 文件[部署 App Service on Azure Stack Hub 的必要條件](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md)。
+> 需要適當映像摘要整合執行的 Azure Stack Hub (Windows Server 和 SQL) 及 App Service 部署。 如需詳細資訊，請參閱 App Service 文件[部署 App Service on Azure Stack Hub 的必要條件](/azure-stack/operator/azure-stack-app-service-before-you-get-started)。
 
 ### <a name="add-code-to-azure-repos"></a>將程式碼新增至 Azure Repos
 
@@ -91,7 +91,7 @@ Azure Repos
 
     ![連線到 Azure Repos 專案](media/solution-deployment-guide-cross-cloud-scaling/image1.JPG)
 
-2. 建立並開啟預設 Web 應用程式以**複製存放庫**。
+2. 建立並開啟預設 Web 應用程式以 **複製存放庫**。
 
     ![在 Azure Web 應用程式中複製存放庫](media/solution-deployment-guide-cross-cloud-scaling/image2.png)
 
@@ -149,17 +149,17 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 
       ![設定 Azure 應用程式服務名稱](media/solution-deployment-guide-cross-cloud-scaling/image10.png)
 
-7. 在 Azure 雲端託管環境的**代理程式佇列**下輸入 "Hosted VS2017"。
+7. 在 Azure 雲端託管環境的 **代理程式佇列** 下輸入 "Hosted VS2017"。
 
       ![為 Azure 雲端託管環境設定代理程式佇列](media/solution-deployment-guide-cross-cloud-scaling/image11.png)
 
-8. 在 [部署 Azure App Service] 功能表中，為環境選取有效的**套件或資料夾**。 對**資料夾位置**選取 [確定]  。
+8. 在 [部署 Azure App Service] 功能表中，為環境選取有效的 **套件或資料夾**。 對 **資料夾位置** 選取 [確定]  。
   
       ![選取適用於 Azure App Service 環境的套件或資料夾](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![選取適用於 Azure App Service 環境的套件或資料夾](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
+      ![資料夾選擇器對話方塊1](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
-9. 儲存所有變更，並返回**發行管線**。
+9. 儲存所有變更，並返回 **發行管線**。
 
     ![在發行管線中儲存變更](media/solution-deployment-guide-cross-cloud-scaling/image14.png)
 
@@ -190,17 +190,17 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 
     ![選取 Azure Stack 代理程式](media/solution-deployment-guide-cross-cloud-scaling/image21.png)
 
-17. 在 [部署 Azure App Service] 區段下，為環境選取有效的**套件或資料夾**。 對資料夾位置選取 [確定]  。
+17. 在 [部署 Azure App Service] 區段下，為環境選取有效的 **套件或資料夾**。 對資料夾位置選取 [確定]  。
 
     ![為 Azure App Service 部署選取資料夾](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![為 Azure App Service 部署選取資料夾](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
+    ![資料夾選擇器對話方塊2](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
 18. 在 [變數] 索引標籤下新增名為 `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` 的變數，並將其值設定為 **true**，範圍設定為 Azure Stack。
 
     ![將變數新增至 Azure 應用程式部署](media/solution-deployment-guide-cross-cloud-scaling/image24.png)
 
-19. 選取兩個成品中的 [持續部署觸發程序]  圖示，並啟用**持續**部署觸發程序。
+19. 選取兩個成品中的 [持續部署觸發程序]  圖示，並啟用 **持續** 部署觸發程序。
 
     ![選取持續部署觸發程序](media/solution-deployment-guide-cross-cloud-scaling/image25.png)
 
@@ -211,7 +211,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 21. 儲存所有變更。
 
 > [!Note]  
-> 工作的某些設定可能已在從範本建立發行定義時自動定義為[環境變數](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)。 這些設定無法在工作設定中修改；而是必須選取父環境項目才能編輯這些設定。
+> 工作的某些設定可能已在從範本建立發行定義時自動定義為[環境變數](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables)。 這些設定無法在工作設定中修改；而是必須選取父環境項目才能編輯這些設定。
 
 ## <a name="publish-to-azure-stack-hub-via-visual-studio"></a>透過 Visual Studio 發佈至 Azure Stack Hub
 
@@ -242,7 +242,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 ## <a name="develop-the-app-build"></a>開發應用程式組建
 
 > [!Note]  
-> 需要適當映像摘要整合執行的 Azure Stack Hub (Windows Server 和 SQL) 及 App Service 部署。 如需詳細資訊，請參閱[部署 Azure Stack Hub 上的 App Service 必要條件](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md)。
+> 需要適當映像摘要整合執行的 Azure Stack Hub (Windows Server 和 SQL) 及 App Service 部署。 如需詳細資訊，請參閱[部署 Azure Stack Hub 上的 App Service 必要條件](/azure-stack/operator/azure-stack-app-service-before-you-get-started)。
 
 請使用 [Azure Resource Manager 範本](https://azure.microsoft.com/resources/templates/) (例如來自 Azure Repos 的 Web 應用程式程式碼) 以部署至這兩個雲端。
 
@@ -250,11 +250,11 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 
 1. 使用在 Azure Stack Hub 上具有專案建立權限的帳戶登入 Azure Repos。
 
-2. 建立並開啟預設 Web 應用程式以**複製存放庫**。
+2. 建立並開啟預設 Web 應用程式以 **複製存放庫**。
 
 #### <a name="create-self-contained-web-app-deployment-for-app-services-in-both-clouds"></a>為這兩個雲端中的應用程式服務建立獨立的 Web 應用程式部署
 
-1. 編輯 **WebApplication.csproj**檔案：選取 `Runtimeidentifier`，然後新增 `win10-x64`。 如需詳細資訊，請參閱[獨立式部署](/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。
+1. 編輯 **WebApplication.csproj** 檔案：選取 `Runtimeidentifier`，然後新增 `win10-x64`。 如需詳細資訊，請參閱[獨立式部署](/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。
 
 2. 使用 Team Explorer 將程式碼簽入 Azure Repos 中。
 
@@ -298,7 +298,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 
 8. 在 [代理程式階段] 中，從 [代理程式佇列]  清單中選取 [Hosted VS2017]  。
 
-9. 在 [部署 Azure App Service]  中，為環境選取有效的**套件或資料夾**。
+9. 在 [部署 Azure App Service]  中，為環境選取有效的 **套件或資料夾**。
 
 10. 在 [選取檔案或資料夾]  中，對 [位置]  選取 [確定]  。
 
@@ -318,7 +318,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 
 18. 在 [代理程式選擇]  底下，從 [代理程式佇列]  清單中挑選 **AzureStack -b Douglas Fir**。
 
-19. 在 [部署 Azure App Service]  中，為環境選取有效的**套件或資料夾**。 在 [選取檔案或資料夾]  中，對 [位置]  資料夾選取 [確定]  。
+19. 在 [部署 Azure App Service]  中，為環境選取有效的 **套件或資料夾**。 在 [選取檔案或資料夾]  中，對 [位置]  資料夾選取 [確定]  。
 
 20. 在 [變數]  索引標籤上，尋找名為 `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` 的變數。 將變數值設定為 **true**，並將其範圍設定為 [Azure Stack Hub]  。
 
@@ -329,7 +329,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 23. 儲存所有變更。
 
 > [!Note]  
-> 發行工作的某些設定已在從範本建立發行定義時自動定義為[環境變數](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)。 這些設定無法在工作設定中修改，但可在父環境項目中修改。
+> 發行工作的某些設定已在從範本建立發行定義時自動定義為[環境變數](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables)。 這些設定無法在工作設定中修改，但可在父環境項目中修改。
 
 ## <a name="create-a-release"></a>建立發行
 
@@ -353,7 +353,7 @@ Azure Pipelines 與 Azure DevOps Services 提供具有高度設定和管理能�
 
 5. 選取環境連結 (**Azure** 或 **Azure Stack Hub**) 以查看特定環境現有與擱置中部署的資訊。 使用這些檢視可快速確認同一個組建已部署至兩個環境。
 
-6. 在瀏覽器中開啟**已部署的生產應用程式**。 例如，針對 Azure App Service 網站，請開啟 URL `https://[your-app-name\].azurewebsites.net`。
+6. 在瀏覽器中開啟 **已部署的生產應用程式**。 例如，針對 Azure App Service 網站，請開啟 URL `https://[your-app-name\].azurewebsites.net`。
 
 ### <a name="integration-of-azure-and-azure-stack-hub-provides-a-scalable-cross-cloud-solution"></a>Azure 與 Azure Stack Hub 的整合提供可調整的跨雲端解決方案
 

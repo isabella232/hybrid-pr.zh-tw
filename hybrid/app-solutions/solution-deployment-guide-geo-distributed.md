@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 27d07070becfa902a715b451baae7c81c7e4b46f
-ms.sourcegitcommit: 56980e3c118ca0a672974ee3835b18f6e81b6f43
-ms.translationtype: HT
+ms.openlocfilehash: 9fa2c351d2c13d85fe1adb17a35e165de96ea2a2
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88886827"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895426"
 ---
 # <a name="direct-traffic-with-a-geo-distributed-app-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub，透過異地分散式應用程式進行流量導向
 
@@ -61,7 +61,7 @@ ms.locfileid: "88886827"
 - **應用程式的命名慣例：** 由於將會部署多個應用程式執行個體，因此每個部署的應用程式執行個體都需要一個名稱。 使用 Power Apps 的 App Service 環境時，多個環境可以使用相同的應用程式名稱。 由於每個 App Service 環境都有唯一的網域尾碼，開發人員可以選擇在每個環境中重複使用相同的應用程式名稱。 例如，開發人員可以將應用程式命名如下：myapp.foo1.p.azurewebsites.net  、myapp.foo2.p.azurewebsites.net  、myapp.foo3.p.azurewebsites.net  ，依此類推。 就此處使用的應用程式，每個應用程式執行個體都有唯一名稱。 所使用的應用程式執行個體名稱是 webfrontend1  、webfrontend2  和 webfrontend3  。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![混合式支柱圖](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub 是 Azure 的延伸模組。 Azure Stack Hub 可將雲端運算的靈活性與創新能力導入您的內部部署環境中，並啟用獨特的混合式雲端，讓您能夠隨處建置及部署混合式應用程式。  
 > 
 > [混合式應用程式設計考量](overview-app-design-considerations.md)一文檢閱了設計、部署和操作混合式應用程式時的軟體品質要素 (放置、延展性、可用性、復原、管理性和安全性)。 這些設計考量有助於您設計出最佳的混合式應用程式，減少生產環境可能會遇到的挑戰。
@@ -97,29 +97,29 @@ ms.locfileid: "88886827"
 設定混合式持續整合/持續交付 (CI/CD)，以將 Web 應用程式部署至 Azure 和 Azure Stack Hub，並自動將變更推送至這兩個雲端。
 
 > [!Note]  
-> 需要適當映像摘要整合執行的 Azure Stack Hub (Windows Server 和 SQL) 及 App Service 部署。 如需詳細資訊，請參閱[部署 Azure Stack Hub 上的 App Service 必要條件](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md)。
+> 需要適當映像摘要整合執行的 Azure Stack Hub (Windows Server 和 SQL) 及 App Service 部署。 如需詳細資訊，請參閱[部署 Azure Stack Hub 上的 App Service 必要條件](/azure-stack/operator/azure-stack-app-service-before-you-get-started)。
 
 #### <a name="add-code-to-azure-repos"></a>將程式碼新增至 Azure Repos
 
-1. 使用在 Azure Repos 上具有專案建立權限的**帳戶**登入 Visual Studio。
+1. 使用在 Azure Repos 上具有專案建立權限的 **帳戶** 登入 Visual Studio。
 
     CI/CD 可同時套用至應用程式程式碼和基礎結構程式碼。 使用 [Azure Resource Manager 範本](https://azure.microsoft.com/resources/templates/)進行私用與託管的雲端開發。
 
     ![在 Visual Studio 中連線至專案](media/solution-deployment-guide-geo-distributed/image1.JPG)
 
-2. 建立並開啟預設 Web 應用程式以**複製存放庫**。
+2. 建立並開啟預設 Web 應用程式以 **複製存放庫**。
 
     ![在 Visual Studio 中複製存放庫](media/solution-deployment-guide-geo-distributed/image2.png)
 
 ### <a name="create-web-app-deployment-in-both-clouds"></a>在這兩個雲端中建立 Web 應用程式部署
 
-1. 編輯 **WebApplication.csproj**檔案：選取 `Runtimeidentifier` 並新增 `win10-x64`。 (請參閱[獨立式部署](/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。)
+1. 編輯 **WebApplication.csproj** 檔案：選取 `Runtimeidentifier` 並新增 `win10-x64`。 (請參閱[獨立式部署](/dotnet/core/deploying/deploy-with-vs#simpleSelf)文件。)
 
     ![在 Visual Studio 中編輯 Web 應用程式專案檔](media/solution-deployment-guide-geo-distributed/image3.png)
 
 2. 使用 Team Explorer **將程式碼簽入 Azure Repos 中**。
 
-3. 確認**應用程式程式碼**已簽入 Azure Repos 中。
+3. 確認 **應用程式程式碼** 已簽入 Azure Repos 中。
 
 ### <a name="create-the-build-definition"></a>建立組建定義
 
@@ -165,17 +165,17 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 
       ![在 Azure DevOps Services 中設定 Azure App Service 名稱](media/solution-deployment-guide-geo-distributed/image10.png)
 
-7. 在 Azure 雲端託管環境的**代理程式佇列**下輸入 "Hosted VS2017"。
+7. 在 Azure 雲端託管環境的 **代理程式佇列** 下輸入 "Hosted VS2017"。
 
       ![在 Azure DevOps Services 中為 Azure 雲端裝載環境設定代理程式佇列](media/solution-deployment-guide-geo-distributed/image11.png)
 
-8. 在 [部署 Azure App Service] 功能表中，為環境選取有效的**套件或資料夾**。 對**資料夾位置**選取 [確定]  。
+8. 在 [部署 Azure App Service] 功能表中，為環境選取有效的 **套件或資料夾**。 對 **資料夾位置** 選取 [確定]  。
   
       ![在 Azure DevOps Services 中選取適用於 Azure App Service 環境的套件或資料夾](media/solution-deployment-guide-geo-distributed/image12.png)
 
-      ![在 Azure DevOps Services 中選取適用於 Azure App Service 環境的套件或資料夾](media/solution-deployment-guide-geo-distributed/image13.png)
+      ![資料夾選擇器對話方塊1](media/solution-deployment-guide-geo-distributed/image13.png)
 
-9. 儲存所有變更，並返回**發行管線**。
+9. 儲存所有變更，並返回 **發行管線**。
 
     ![在 Azure DevOps Services 中儲存發行管線中的變更](media/solution-deployment-guide-geo-distributed/image14.png)
 
@@ -208,17 +208,17 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 
     ![在 Azure DevOps Services 中選取 Azure Stack Hub 代理程式](media/solution-deployment-guide-geo-distributed/image21.png)
 
-17. 在 [部署 Azure App Service] 區段下，為環境選取有效的**套件或資料夾**。 對資料夾位置選取 [確定]  。
+17. 在 [部署 Azure App Service] 區段下，為環境選取有效的 **套件或資料夾**。 對資料夾位置選取 [確定]  。
 
     ![在 Azure DevOps Services 中為 Azure App Service 部署選取資料夾](media/solution-deployment-guide-geo-distributed/image22.png)
 
-    ![在 Azure DevOps Services 中為 Azure App Service 部署選取資料夾](media/solution-deployment-guide-geo-distributed/image23.png)
+    ![資料夾選擇器對話方塊2](media/solution-deployment-guide-geo-distributed/image23.png)
 
 18. 在 [變數] 索引標籤下新增名為 `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS` 的變數，並將其值設定為 **true**，範圍設定為 Azure Stack Hub。
 
     ![在 Azure DevOps Services 中將變數新增至 Azure 應用程式部署](media/solution-deployment-guide-geo-distributed/image24.png)
 
-19. 選取兩個成品中的 [持續部署觸發程序]  圖示，並啟用**持續**部署觸發程序。
+19. 選取兩個成品中的 [持續部署觸發程序]  圖示，並啟用 **持續** 部署觸發程序。
 
     ![在 Azure DevOps Services 中選取持續部署觸發程序](media/solution-deployment-guide-geo-distributed/image25.png)
 
@@ -229,7 +229,7 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 21. 儲存所有變更。
 
 > [!Note]  
-> 工作的某些設定可能已在從範本建立發行定義時自動定義為[環境變數](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables)。 這些設定無法在工作設定中修改；而是必須選取父環境項目才能編輯這些設定。
+> 工作的某些設定可能已在從範本建立發行定義時自動定義為[環境變數](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables)。 這些設定無法在工作設定中修改；而是必須選取父環境項目才能編輯這些設定。
 
 ## <a name="part-2-update-web-app-options"></a>第 2 部分：更新 Web 應用程式選項
 
@@ -239,7 +239,7 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 
 > [!div class="checklist"]
 > - 將現有的自訂 DNS 名稱對應至 Azure Web Apps。
-> - 使用 **CNAME 記錄** **A 記錄**將自訂 DNS 名稱對應至 App Service。
+> - 使用 **CNAME 記錄** **A 記錄** 將自訂 DNS 名稱對應至 App Service。
 
 ### <a name="map-an-existing-custom-dns-name-to-azure-web-apps"></a>將現有的自訂 DNS 名稱對應至 Azure Web Apps
 
@@ -267,7 +267,7 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 例如，若要對 northwindcloud.com 和 www\.northwindcloud.com 新增 DNS 項目，請設定 northwindcloud.com 根網域的 DNS 設定。
 
 > [!Note]  
-> 網域名稱可使用 [Azure 入口網站](/azure/app-service/manage-custom-dns-buy-domain)來購買。 若要將自訂 DNS 名稱對應至 Web 應用程式，Web 應用程式的 [App Service 方案](https://azure.microsoft.com/pricing/details/app-service/)必須是付費層 (**共用**、**基本**、**標準**或**進階**)。
+> 網域名稱可使用 [Azure 入口網站](/azure/app-service/manage-custom-dns-buy-domain)來購買。 若要將自訂 DNS 名稱對應至 Web 應用程式，Web 應用程式的 [App Service 方案](https://azure.microsoft.com/pricing/details/app-service/)必須是付費層 (**共用**、**基本**、**標準** 或 **進階**)。
 
 ### <a name="create-and-map-cname-and-a-records"></a>建立和對應 CNAME 與 A 記錄
 
@@ -378,11 +378,11 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 - 包含憑證鏈結中的所有中繼憑證。
 
 > [!Note]  
-> **橢圓曲線密碼編譯 (ECC) 憑證**可與 App Service 搭配使用，但不在本指南的討論範圍內。 如需建立 ECC 憑證方面的協助，請洽詢憑證授權單位。
+> **橢圓曲線密碼編譯 (ECC) 憑證** 可與 App Service 搭配使用，但不在本指南的討論範圍內。 如需建立 ECC 憑證方面的協助，請洽詢憑證授權單位。
 
 #### <a name="prepare-the-web-app"></a>準備 Web 應用程式
 
-若要將自訂 SSL 憑證繫結至 Web 應用程式，[App Service 方案](https://azure.microsoft.com/pricing/details/app-service/)必須為**基本**、**標準**或**進階**層。
+若要將自訂 SSL 憑證繫結至 Web 應用程式，[App Service 方案](https://azure.microsoft.com/pricing/details/app-service/)必須為 **基本**、**標準** 或 **進階** 層。
 
 #### <a name="sign-in-to-azure"></a>登入 Azure
 
@@ -398,15 +398,15 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 
     ![Web 應用程式中的相應增加功能表](media/solution-deployment-guide-geo-distributed/image34.png)
 
-1. 確定 Web 應用程式不在**免費**或**共用**服務層級中。 系統會以深藍色方塊醒目顯示 Web 應用程式目前的層。
+1. 確定 Web 應用程式不在 **免費** 或 **共用** 服務層級中。 系統會以深藍色方塊醒目顯示 Web 應用程式目前的層。
 
     ![檢查 Web 應用程式中的定價層](media/solution-deployment-guide-geo-distributed/image35.png)
 
-**免費**和**共用**服務層級中不支援自訂 SSL。 若要升級，請依照下一節中的步驟操作，或**選擇您的定價層**頁面，然後跳至[上傳並繫結 SSL 憑證](/azure/app-service/app-service-web-tutorial-custom-ssl)。
+**免費** 和 **共用** 服務層級中不支援自訂 SSL。 若要升級，請依照下一節中的步驟操作，或 **選擇您的定價層** 頁面，然後跳至 [上傳並繫結 SSL 憑證](/azure/app-service/app-service-web-tutorial-custom-ssl)。
 
 #### <a name="scale-up-your-app-service-plan"></a>擴大您的 App Service 方案
 
-1. 選取**基本** **標準**或**高階**層的其中一個。
+1. 選取 **基本** **標準** 或 **高階** 層的其中一個。
 
 2. 選取 [選取]  。
 
@@ -420,7 +420,7 @@ Azure DevOps Services 提供具有高度設定和管理能力的管線，可用�
 
 將多個憑證合併到鏈結中。
 
-1. 在文字編輯器中**開啟您收到的每個憑證**。
+1. 在文字編輯器中 **開啟您收到的每個憑證**。
 
 2. 為合併的憑證建立一個檔案，並命名為 *mergedcertificate.crt*。 在文字編輯器中，將每個憑證的內容複製到這個檔案中。 憑證的順序應該遵循在憑證鏈結中的順序，開頭為您的憑證，以及結尾為根憑證。 看起來會像下列範例：
 
@@ -463,7 +463,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 出現提示時，請定義您之後將 SSL 憑證上傳至 App Service 時所使用的密碼。
 
-如果您使用 IIS 或 **Certreq.exe** 產生憑證要求，請將憑證安裝至本機電腦，然後[將憑證匯出為 PFX](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754329(v=ws.11))。
+如果您使用 IIS 或 **Certreq.exe** 產生憑證要求，請將憑證安裝至本機電腦，然後 [將憑證匯出為 PFX](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754329(v=ws.11))。
 
 #### <a name="upload-the-ssl-certificate"></a>上傳 SSL 憑證
 
@@ -492,7 +492,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 2. 在 [新增 SSL 繫結]  頁面中，使用下拉式清單選取要保護的網域名稱，以及要使用的憑證。
 
-3. 在 **SSL 類型**中，選擇使用 [**伺服器名稱指示 (SNI)** ](https://en.wikipedia.org/wiki/Server_Name_Indication)還是以 IP 為基礎的 SSL。
+3. 在 **SSL 類型** 中，選擇使用 [**伺服器名稱指示 (SNI)**](https://en.wikipedia.org/wiki/Server_Name_Indication)還是以 IP 為基礎的 SSL。
 
     - **以 SNI 為基礎的 SSL**：可能會新增多個以 SNI 為基礎的 SSL 繫結。 此選項可允許多個 SSL 憑證保護同一個 IP 位址上的多個網域。 大多數現代化的瀏覽器 (包括 Internet Explorer、Chrome、Firefox 和 Opera) 都支援 SNI (可在[伺服器名稱指示](https://wikipedia.org/wiki/Server_Name_Indication)找到更完整的瀏覽器支援資訊)。
 
@@ -573,7 +573,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 ### <a name="add-traffic-manager-endpoints"></a>新增流量管理員端點
 
-1. 在入口網站的搜尋列中，搜尋您在上一節建立的**流量管理員設定檔**名稱，然後在顯示的結果中選取流量管理員設定檔。
+1. 在入口網站的搜尋列中，搜尋您在上一節建立的 **流量管理員設定檔** 名稱，然後在顯示的結果中選取流量管理員設定檔。
 
 2. 在 [流量管理員設定檔]  的 [設定]  區段中，選取 [端點]  。
 
@@ -587,9 +587,9 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
 7. 針對完整網域名稱 (**FQDN**)，請使用 Azure Stack Hub Web 應用程式的外部 URL。
 
-8. 在 [地區對應] 下方，選取資源所在的區域/洲別。 例如**歐洲**。
+8. 在 [地區對應] 下方，選取資源所在的區域/洲別。 例如 **歐洲**。
 
-9. 在顯示的 [國家/區域] 下拉式清單下方，選取將套用到此端點的國家/地區。 例如**德國**。
+9. 在顯示的 [國家/區域] 下拉式清單下方，選取將套用到此端點的國家/地區。 例如 **德國**。
 
 10. 維持不勾選 [新增為已停用]  。
 
@@ -599,13 +599,13 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
 
     1. 針對 [類型]  ，選取 [Azure 端點]  。
 
-    2. 提供端點**名稱**。
+    2. 提供端點 **名稱**。
 
     3. 針對 [目標資源類型]  ，選取 [App Service]  。
 
     4. 針對 [目標資源]  ，選取 [選擇應用程式服務]  ，以顯示相同訂用帳戶下的 Web Apps 清單。 在 [資源]  中，挑選要作為第一個端點的應用程式服務。
 
-13. 在 [地區對應] 下方，選取資源所在的區域/洲別。 例如**北美洲/中美洲/加勒比海**。
+13. 在 [地區對應] 下方，選取資源所在的區域/洲別。 例如 **北美洲/中美洲/加勒比海**。
 
 14. 在顯示的 [國家/區域] 下拉式清單下方，將此位置保留為空白，以選取上述所有的區域群組。
 
@@ -616,7 +616,7 @@ openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-c
     > [!Note]  
     >  建立至少一個地理範圍為 [全部 (全球)] 的端點，作為資源的預設端點。
 
-17. 這兩個端點新增完畢後，它們會顯示在 [流量管理員設定檔]  中，而且監視狀態是**線上**。
+17. 這兩個端點新增完畢後，它們會顯示在 [流量管理員設定檔]  中，而且監視狀態是 **線上**。
 
     ![流量管理員設定檔端點狀態](media/solution-deployment-guide-geo-distributed/image46.png)
 

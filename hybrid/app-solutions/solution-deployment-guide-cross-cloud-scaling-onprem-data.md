@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: ecc42a94e2c59531b2a2e933772b0d8ce8c58609
-ms.sourcegitcommit: 0d5b5336bdb969588d0b92e04393e74b8f682c3b
-ms.translationtype: HT
+ms.openlocfilehash: 0989859fd68847932d3e69defee59740a2bffd44
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353473"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895392"
 ---
 # <a name="deploy-hybrid-app-with-on-premises-data-that-scales-cross-cloud"></a>使用內部部署資料部署可跨雲端調整的混合式應用程式
 
@@ -47,7 +47,7 @@ ms.locfileid: "92353473"
 本教學課程假設您擁有全域 Azure 和 Azure Stack Hub 的基本知識。 若要在開始本教學課程前深入了解，請檢閱下列文章：
 
 - [Azure 簡介](https://azure.microsoft.com/overview/what-is-azure/)
-- [Azure Stack Hub 重要概念](/azure-stack/operator/azure-stack-overview.md)
+- [Azure Stack Hub 重要概念](/azure-stack/operator/azure-stack-overview)
 
 本教學課程也假設您已有 Azure 訂用帳戶。 如果您沒有訂用帳戶，請先[建立免費帳戶](https://azure.microsoft.com/free/)，再開始操作。
 
@@ -55,7 +55,7 @@ ms.locfileid: "92353473"
 
 開始進行本解決方案之前，請確定您符合下列需求：
 
-- Azure Stack 開發套件 (ASDK) 或 Azure Stack Hub 整合式系統的訂用帳戶。 若要部署 ASDK，請依照[使用安裝程式部署 ASDK](/azure-stack/asdk/asdk-install.md) 中的指示操作。
+- Azure Stack 開發套件 (ASDK) 或 Azure Stack Hub 整合式系統的訂用帳戶。 若要部署 ASDK，請依照[使用安裝程式部署 ASDK](/azure-stack/asdk/asdk-install) 中的指示操作。
 - 您的 Azure Stack Hub 安裝應安裝下列項目：
   - Azure App Service。 請使用 Azure Stack Hub 操作員，在您的環境中部署和設定 Azure App Service。 在本教學課程中，App Service 至少必須有一 (1) 個可用的專用背景工作角色。
   - Windows Server 2016 映像。
@@ -90,16 +90,16 @@ ms.locfileid: "92353473"
 
 7. 在 [設定 > 設定選用功能]  下方，進行下列設定：
 
-   - **儲存體帳戶** ：如有需要，請建立新帳戶。
-   - **虛擬網路** ：
+   - **儲存體帳戶**：如有需要，請建立新帳戶。
+   - **虛擬網路**：
 
      > [!Important]  
      > 請確定您的 SQL Server VM 部署在與 VPN 閘道相同的虛擬網路上。
 
-   - **公用 IP 位址** ：請使用預設設定。
-   - **網路安全性群組** ︰(NSG)。 建立新的 NSG。
-   - **擴充功能和監視** ：請保留預設設定值。
-   - **診斷儲存體帳戶** ：如有需要，請建立新帳戶。
+   - **公用 IP 位址**：請使用預設設定。
+   - **網路安全性群組**︰(NSG)。 建立新的 NSG。
+   - **擴充功能和監視**：請保留預設設定值。
+   - **診斷儲存體帳戶**：如有需要，請建立新帳戶。
    - 選取 [確定]  以儲存您的設定。
 
      ![在 Azure Stack Hub 使用者入口網站中設定選用 VM 功能](media/solution-deployment-guide-hybrid/image4.png)
@@ -107,7 +107,7 @@ ms.locfileid: "92353473"
 8. 在 [SQL Server 設定]  下方，進行下列設定：
 
    - 針對 [SQL 連線能力]  ，選取 [公用 (網際網路)]  。
-   - 將 [連接埠]  保留為預設值 **1433** 。
+   - 將 [連接埠]  保留為預設值 **1433**。
    - 針對 [SQL 驗證]  ，選取 [啟用]  。
 
      > [!Note]  
@@ -139,7 +139,7 @@ Azure App Service 可簡化執行和管理 Web 應用程式的工作。 Azure St
 
 Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，讓使用者能夠存取您的應用程式。 如果您的 Azure Stack Hub 可從網際網路存取，請記下 Azure Stack Hub Web 應用程式的公眾對應 IP 位址或 URL。
 
-如果您使用 ASDK，您可以[設定靜態 NAT 對應](/azure-stack/operator/azure-stack-create-vpn-connection-one-node.md#configure-the-nat-vm-on-each-asdk-for-gateway-traversal)，將 App Service 公開於虛擬環境外。
+如果您使用 ASDK，您可以[設定靜態 NAT 對應](/azure-stack/operator/azure-stack-create-vpn-connection-one-node#configure-the-nat-vm-on-each-asdk-for-gateway-traversal)，將 App Service 公開於虛擬環境外。
 
 ### <a name="connect-a-web-app-in-azure-to-a-hybrid-network"></a>將 Azure 中的 Web 應用程式連線至混合式網路
 
@@ -212,9 +212,9 @@ Azure Stack Hub 上的 App Service 必須可從公用網際網路進行路由，
 
 由於流量管理員需倚賴 DNS CNAME，因此子網域必須能夠正確地將流量路由至端點。 如需與 DNS 記錄和網域之間的對應有關的詳細資訊，請參閱[使用流量管理員對應網域](/azure/app-service/web-sites-traffic-manager-custom-domain-name)。
 
-針對 Azure 端點，您必須建立可讓使用者用來存取 Web 應用程式的子網域。 在本教學課程中可以使用 **app.northwind.com** ，但您應根據自己的網域自訂此值。
+針對 Azure 端點，您必須建立可讓使用者用來存取 Web 應用程式的子網域。 在本教學課程中可以使用 **app.northwind.com**，但您應根據自己的網域自訂此值。
 
-您也必須以 Azure Stack Hub 端點的 A 記錄建立子網域。 您可以使用 **azurestack.northwind.com** 。
+您也必須以 Azure Stack Hub 端點的 A 記錄建立子網域。 您可以使用 **azurestack.northwind.com**。
 
 ### <a name="configure-a-custom-domain-in-azure"></a>在 Azure 中設定自訂網域
 
@@ -308,7 +308,7 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
     ![在 Azure App Service 中啟用自動調整](media/solution-deployment-guide-hybrid/image17.png)
 
-3. 輸入 [自動調整設定名稱]  的名稱。 選取 [依據計量調整規模]  ，作為 **預設** 自動調整規則。 將 [執行個體限制]  設為 **最小值：1** 、 **最大值：10** 和 **預設值：1** 。
+3. 輸入 [自動調整設定名稱]  的名稱。 選取 [依據計量調整規模]  ，作為 **預設** 自動調整規則。 將 [執行個體限制]  設為 **最小值：1**、**最大值：10** 和 **預設值：1**。
 
     ![在 Azure App Service 中設定自動調整](media/solution-deployment-guide-hybrid/image18.png)
 
@@ -324,16 +324,16 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
 3. 在 [運算子]  下方，選取 [大於]  。
 
-   - 將 [閾值]  設為 **50** 。
-   - 將 [持續時間]  設為 **10** 。
+   - 將 [閾值]  設為 **50**。
+   - 將 [持續時間]  設為 **10**。
 
 #### <a name="action"></a>動作
 
 1. 在 [作業]  下方，選取 [將計數增加]  。
 
-2. 將 [執行個體計數]  設為 **2** 。
+2. 將 [執行個體計數]  設為 **2**。
 
-3. 將 [緩和時間]  設為 **5** 。
+3. 將 [緩和時間]  設為 **5**。
 
 4. 選取 [新增]  。
 
@@ -358,15 +358,15 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 
 3. 在 [運算子]  下方，選取 [小於]  。
 
-   - 將 [閾值]  設為 **30** 。
-   - 將 [持續時間]  設為 **10** 。
+   - 將 [閾值]  設為 **30**。
+   - 將 [持續時間]  設為 **10**。
 
 #### <a name="action"></a>動作
 
 1. 在 [作業]  下方，選取 [將計數減少]  。
 
-   - 將 [執行個體計數]  設為 **1** 。
-   - 將 [緩和時間]  設為 **5** 。
+   - 將 [執行個體計數]  設為 **1**。
+   - 將 [緩和時間]  設為 **5**。
 
 2. 選取 [新增]  。
 
@@ -403,9 +403,9 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 4. 在 [新增端點]  中，使用 Azure Stack Hub 的下列設定：
 
    - 針對 [類型]  ，選取 [外部端點]  。
-   - 輸入端點的 **名稱** 。
+   - 輸入端點的 **名稱**。
    - 針對 [完整網域名稱 (FQDN) 或 IP]  ，輸入 Azure Stack Hub Web 應用程式的外部 URL。
-   - 將 [權數]  保留為預設值 **1** 。 此權數會使所有流量都傳送至此端點 (如果其狀況良好)。
+   - 將 [權數]  保留為預設值 **1**。 此權數會使所有流量都傳送至此端點 (如果其狀況良好)。
    - 將 [新增為已停用]  保持為未核取。
 
 5. 選取 [確定]  以儲存 Azure Stack Hub 端點。
@@ -417,11 +417,11 @@ Web 應用程式的每個執行個體會使用不同的方法連線至 SQL 資�
 3. 在 [新增端點]  上，使用 Azure 的下列設定：
 
    - 針對 [類型]  ，選取 [Azure 端點]  。
-   - 輸入端點的 **名稱** 。
+   - 輸入端點的 **名稱**。
    - 針對 [目標資源類型]  ，選取 [App Service]  。
    - 針對 [目標資源]  選取 [選擇 App Service]  ，以顯示相同訂用帳戶中的 Web Apps 清單。
    - 在 [資源]  中，挑選您想要新增為第一個端點的應用程式服務。
-   - 針對 [權數]  ，選取 **2** 。 此設定會使所有的流量在主要端點狀況不良時均傳送至此端點；或者，您可以使用經觸發會重新導向流量的規則/警示。
+   - 針對 [權數]  ，選取 **2**。 此設定會使所有的流量在主要端點狀況不良時均傳送至此端點；或者，您可以使用經觸發會重新導向流量的規則/警示。
    - 將 [新增為已停用]  保持為未核取。
 
 4. 選取 [確定]  以儲存 Azure 端點。
@@ -438,7 +438,7 @@ Azure Application Insights 可讓您根據自己設定的條件來監視應用�
 
 ### <a name="create-an-alert-from-metrics"></a>建立以計量為依據的警示
 
-在 Azure 入口網站中，請移至本教學課程的資源群組，然後選取 Application Insights 執行個體以開啟 **Application Insights** 。
+在 Azure 入口網站中，請移至本教學課程的資源群組，然後選取 Application Insights 執行個體以開啟 **Application Insights**。
 
 ![Application Insights](media/solution-deployment-guide-hybrid/image21.png)
 

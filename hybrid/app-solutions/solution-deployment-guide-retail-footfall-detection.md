@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 2177b32474dea695967e197acbd4bc1e18422d7b
-ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
-ms.translationtype: HT
+ms.openlocfilehash: caedbd4758b9ae8c93cf9bb625ed9aac68bfa196
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96901485"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895355"
 ---
 # <a name="deploy-an-ai-based-footfall-detection-solution-using-azure-and-azure-stack-hub"></a>使用 Azure 和 Azure Stack Hub 來部署 AI 型客流量偵測解決方案
 
@@ -37,22 +37,22 @@ ms.locfileid: "96901485"
 
 - 檢閱[客流量偵測解決方案](pattern-retail-footfall-detection.md)主題。
 - 透過以下方式，取得對 Azure Stack 開發套件 (ASDK) 或 Azure Stack Hub 整合式系統執行個體的使用者存取權：
-  - 安裝 [Azure App Service on Azure Stack Hub 資源提供者](/azure-stack/operator/azure-stack-app-service-overview.md)。 您需要 Azure Stack Hub 執行個體的操作員存取權，或與您的系統管理員合作以進行安裝。
+  - 安裝 [Azure App Service on Azure Stack Hub 資源提供者](/azure-stack/operator/azure-stack-app-service-overview)。 您需要 Azure Stack Hub 執行個體的操作員存取權，或與您的系統管理員合作以進行安裝。
   - 一個可提供 App Service 和儲存體配額的訂用帳戶。 您需要操作員存取權才能建立供應專案。
 - 取得 Azure 訂用帳戶的存取權。
   - 如果您沒有 Azure 訂用帳戶，請在開始前先註冊一個[免費試用帳戶](https://azure.microsoft.com/free/)。
 - 在您的目錄中建立兩個服務主體：
   - 一個設定為與 Azure 資源搭配使用，並具備 Azure 訂用帳戶範圍的存取權。
   - 一個設定為與 Azure Stack Hub 資源搭配使用，並具備 Azure Stack Hub 訂用帳戶範圍的存取權。
-  - 若要深入了解建立服務主體及授權存取的相關資訊，請參閱[使用應用程式身分識別來存取資源](/azure-stack/operator/azure-stack-create-service-principals.md)。 如果您偏好使用 Azure CLI，請參閱[使用 Azure CLI 建立 Azure 服務主體](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true)。
+  - 若要深入了解建立服務主體及授權存取的相關資訊，請參閱[使用應用程式身分識別來存取資源](/azure-stack/operator/azure-stack-create-service-principals)。 如果您偏好使用 Azure CLI，請參閱[使用 Azure CLI 建立 Azure 服務主體](/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest&preserve-view=true)。
 - 在 Azure 或 Azure Stack Hub 中部署 Azure 認知服務。
   - 首先，請[深入了解認知服務](https://azure.microsoft.com/services/cognitive-services/)。
-  - 接著請造訪[將 Azure 認知服務部署至 Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md)，以在 Azure Stack Hub 上部署認知服務。 您必須先註冊才能存取預覽版。
+  - 接著請造訪[將 Azure 認知服務部署至 Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services)，以在 Azure Stack Hub 上部署認知服務。 您必須先註冊才能存取預覽版。
 - 複製或下載未設定的 Azure 自訂視覺 AI 開發套件。 如需詳細資訊，請參閱[視覺 AI 開發套件](https://azure.github.io/Vision-AI-DevKit-Pages/) \(英文\)。
 - 註冊 Power BI 帳戶。
 - Azure 認知服務臉部 API 訂用帳戶金鑰與端點 URL。 您可以透過[試用認知服務](https://azure.microsoft.com/try/cognitive-services/?api=face-api)免費試用取得這兩個項目。 或者，依照[建立認知服務帳戶](/azure/cognitive-services/cognitive-services-apis-create-account)中的指示取得免費試用。
 - 安裝下列開發資源：
-  - [Azure CLI 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2.md)
+  - [Azure CLI 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2)
   - [Docker CE](https://hub.docker.com/search/?type=edition&offering=community)
   - [Porter](https://porter.sh/)。 您可以使用 Porter 來部署雲端應用程式，並使用為您提供的 CNAB 組合資訊清單。
   - [Visual Studio Code](https://code.visualstudio.com/)

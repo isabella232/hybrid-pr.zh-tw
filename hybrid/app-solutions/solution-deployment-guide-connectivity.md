@@ -7,12 +7,12 @@ ms.date: 11/05/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
-ms.openlocfilehash: 16c5d7820e8c865a9f88cb00da5cc7c854379414
-ms.sourcegitcommit: d2def847937178f68177507be151df2aa8e25d53
-ms.translationtype: HT
+ms.openlocfilehash: 4480f51b03082f2a0cbb7f2f213e05b7bf488646
+ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86477281"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895368"
 ---
 # <a name="configure-hybrid-cloud-connectivity-using-azure-and-azure-stack-hub"></a>使用 Azure 與 Azure Stack Hub 設定混合式雲端連線
 
@@ -25,7 +25,7 @@ ms.locfileid: "86477281"
 > - 在全域 Azure 中使用雲端調整應用程式部署和資源的同時，維護舊版系統。
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![混合式支柱圖](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub 是 Azure 的延伸模組。 Azure Stack Hub 可將雲端運算的靈活性與創新能力導入您的內部部署環境中，並啟用獨特的混合式雲端，讓您能夠隨處建置及部署混合式應用程式。  
 > 
 > [混合式應用程式設計考量](overview-app-design-considerations.md)一文檢閱了設計、部署和操作混合式應用程式時的軟體品質要素 (放置、延展性、可用性、復原、管理性和安全性)。 這些設計考量有助於您設計出最佳的混合式應用程式，減少生產環境可能會遇到的挑戰。
@@ -37,7 +37,7 @@ ms.locfileid: "86477281"
 ### <a name="azure"></a>Azure
 
 - 如果您沒有 Azure 訂用帳戶，請在開始前建立[免費帳戶](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)。
-- 在 Azure 中建立 [Web 應用程式](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts)。 請記下 Web 應用程式 URL，您在解決方案中將會需要用到這項資訊。
+- 在 Azure 中建立 [Web 應用程式](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 請記下 Web 應用程式 URL，您在解決方案中將會需要用到這項資訊。
 
 ### <a name="azure-stack-hub"></a>Azure Stack Hub
 
@@ -47,9 +47,9 @@ Azure OEM/硬體合作夥伴可部署生產 Azure Stack Hub，而所有使用者
    >[!Note]
    >部署 ASDK 可能需要 7 小時，因此請加以規劃。
 
-- 將 [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) PaaS 服務部署至 Azure Stack Hub。
-- 在 Azure Stack Hub 環境中[建立方案和供應項目](/azure-stack/operator/service-plan-offer-subscription-overview.md)。
-- 在 Azure Stack Hub 環境內[建立租用戶訂用帳戶](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md)。
+- 將 [App Service](/azure-stack/operator/azure-stack-app-service-deploy) PaaS 服務部署至 Azure Stack Hub。
+- 在 Azure Stack Hub 環境中[建立方案和供應項目](/azure-stack/operator/service-plan-offer-subscription-overview)。
+- 在 Azure Stack Hub 環境內[建立租用戶訂用帳戶](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm)。
 
 ### <a name="azure-stack-hub-components"></a>Azure Stack Hub 元件
 
@@ -58,7 +58,7 @@ Azure Stack Hub 操作員必須部署 App Service、建立方案與供應項目�
 此解決方案範例假設您有 Azure 與 Azure Stack Hub 的一些基本知識。 若要在開始此解決方案前深入了解，請閱讀下列文章：
 
 - [Azure 簡介](https://azure.microsoft.com/overview/what-is-azure/)
-- [Azure Stack Hub 重要概念](/azure-stack/operator/azure-stack-overview.md)
+- [Azure Stack Hub 重要概念](/azure-stack/operator/azure-stack-overview)
 
 ### <a name="before-you-begin"></a>開始之前
 
@@ -113,7 +113,7 @@ Azure Stack Hub 操作員必須部署 App Service、建立方案與供應項目�
 
 在 Azure Stack Hub 中建立 vNet：
 
-1. 使用 Azure Stack Hub 的**租用戶入口網站**，重複執行上述步驟 (1-4)。
+1. 使用 Azure Stack Hub 的 **租用戶入口網站**，重複執行上述步驟 (1-4)。
 
 ## <a name="add-a-gateway-subnet"></a>新增閘道子網路
 
@@ -170,7 +170,7 @@ Azure Stack Hub 操作員必須部署 App Service、建立方案與供應項目�
   >如果您的內部部署網路有所變更，或者您需要變更 VPN 裝置的公用 IP 位址，您稍後可以更新這些值。
 
 1. 在入口網站中，選取 [+建立資源]  。
-2. 在搜尋方塊中輸入**區域網路閘道**，然後選取 **Enter** 鍵進行搜尋。 會顯示結果清單。
+2. 在搜尋方塊中輸入 **區域網路閘道**，然後選取 **Enter** 鍵進行搜尋。 會顯示結果清單。
 3. 選取 [區域網路閘道]  ，然後選取 [建立]  以開啟 [建立區域網路閘道]  頁面。
 4. 在 [建立區域網路閘道]  上，使用 [教學課程範例值]  指定區域網路閘道的值。 請納入下列額外值：
 
@@ -203,7 +203,7 @@ Azure Stack Hub 操作員必須部署 App Service、建立方案與供應項目�
     - **虛擬網路閘道**：選取您所建立的虛擬網路閘道。
     - **區域網路閘道**：選取您所建立的區域網路閘道。
     - **連線名稱**：此名稱會自動填入來自兩個閘道的值。
-    - **共用金鑰**：此值必須與您用於本機內部部署 VPN 裝置的值相符。 教學課程範例會使用 'abc123'，但是您應該使用更為複雜的值。 重要的是，此值*必須*與您在設定 VPN 裝置時指定的值相同。
+    - **共用金鑰**：此值必須與您用於本機內部部署 VPN 裝置的值相符。 教學課程範例會使用 'abc123'，但是您應該使用更為複雜的值。 重要的是，此值 *必須* 與您在設定 VPN 裝置時指定的值相同。
     - [訂用帳戶]  、[資源群組]  和 [位置]  的值是固定的。
 
 6. 選取 [確定]  來建立連線。
