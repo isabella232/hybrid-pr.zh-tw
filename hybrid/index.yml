@@ -10,12 +10,12 @@ metadata:
   author: BryanLa
   ms.author: bryanla
   ms.date: 03/09/2021
-  ms.openlocfilehash: 198095c4a96cfcca76a89b47ecc5f716b6b6770a
-  ms.sourcegitcommit: 817b61dd59371b24281419936295da239a2cca18
+  ms.openlocfilehash: 23834253d05753219efbd5b5e15a216741388e8a
+  ms.sourcegitcommit: d218ae31c564b862f2d79bb560075f5983f1771c
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "104891078"
+  ms.lasthandoff: 03/24/2021
+  ms.locfileid: "105048913"
 highlightedContent:
   items:
   - title: Ignite 2021：混合式會話
@@ -396,6 +396,18 @@ additionalContent:
         text: 實作混合式檔案伺服器基礎結構
       - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
         text: 使用 Windows Server IaaS 實作混合式備份和復原
+    - title: Windows Server
+      links:
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-infrastructure/
+        text: 實作 Windows Server 混合式雲端基礎結構
+      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+        text: 使用 Windows Server IaaS 實作混合式備份和復原
+      - url: /learn/modules/implement-hybrid-identity-windows-server/
+        text: 使用 Windows Server 實作混合式身分識別
+      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+        text: 監視 Windows Server IaaS 虛擬機器和混合式執行個體
+      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+        text: Windows Server 混合式雲端管理、監視和安全性
   - title: 其他資源
     items:
     - title: 一般
