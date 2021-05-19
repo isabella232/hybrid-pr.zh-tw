@@ -11,435 +11,429 @@ metadata:
   ms.author: bryanla
   ms.date: 03/09/2021
   ms.custom: e2e-hybrid
-  ms.openlocfilehash: 63dedc60e43b3dac708772821bd6f2a0b00c38fb
-  ms.sourcegitcommit: 6404be204d56d42f96ab525baf6108f4b710da77
-  ms.translationtype: MT
-  ms.contentlocale: zh-TW
-  ms.lasthandoff: 03/29/2021
-  ms.locfileid: "105735587"
 highlightedContent:
   items:
-  - title: Ignite 2021：混合式會話
-    itemType: video
-    url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid
-  - title: Ignite 2021： Azure Arc 會話
-    itemType: video
-    url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=" Arc "
-  - title: Ignite 2021： Edge AI 研討會
-    itemType: video
-    url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" AI edge"
-  - title: 使用 Azure Arc 和 Azure Stack 建立新式混合式應用程式
-    itemType: video
-    url: https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack
-  - title: 'IT Ops 討論：混合式 (的所有專案都是 Mark Russinovich) '
-    itemType: video
-    url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff
-  - title: Azure Modular Datacenter 簡介
-    itemType: video
-    url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/
-  - title: 激發 2020：Azure Stack HCI 的新功能
-    itemType: video
-    url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
-  - title: 組建 2020：混合式工作階段
-    itemType: video
-    url: https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D
+    - title: Ignite 2021：混合式會話
+      itemType: video
+      url: 'https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid'
+    - title: Ignite 2021： Azure Arc 會話
+      itemType: video
+      url: 'https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=" Arc "'
+    - title: Ignite 2021： Edge AI 研討會
+      itemType: video
+      url: 'https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" AI edge"'
+    - title: 使用 Azure Arc 和 Azure Stack 建立新式混合式應用程式
+      itemType: video
+      url: 'https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack'
+    - title: 'IT Ops 討論：混合式 (的所有專案都是 Mark Russinovich) '
+      itemType: video
+      url: 'https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff'
+    - title: Azure Modular Datacenter 簡介
+      itemType: video
+      url: 'https://azure.microsoft.com/resources/videos/azure-modular-datacenter/'
+    - title: 激發 2020：Azure Stack HCI 的新功能
+      itemType: video
+      url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
+    - title: 組建 2020：混合式工作階段
+      itemType: video
+      url: 'https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D'
 productDirectory:
   title: Azure 混合式和多重雲端平台
   summary: 平台可用來建立和操作混合式和多重雲端解決方案。
   items:
-  - title: Azure 全球公用/主權雲端平台。
-    imageSrc: media/index/logo_azure.svg
-    links:
-    - url: /azure
-      text: Azure 服務
-  - title: 適用於託管、內部部署和行動資料中心的私人雲端平台。
-    imageSrc: media/index/azure-stack-hub.svg
-    links:
-    - url: /azure-stack/mdc
-      text: Azure Modular Datacenter
-    - url: /azure-stack/hci
-      text: Azure Stack HCI
-    - url: /azure-stack#azure-stack-hub
-      text: Azure Stack Hub
-    - url: /azure-stack/ruggedized
-      text: Azure Stack Hub 耐用
-  - title: 適用於裝置的智慧邊緣平台。
-    imageSrc: media/index/intelligent.svg
-    links:
-    - url: /azure/iot-edge/
-      text: Azure IoT Edge
-    - url: /azure-sphere
-      text: Azure Sphere
-    - url: /azure/databox-online/
-      text: Azure Stack Edge
-    - url: /windows/iot-core/
-      text: Windows for IoT
+    - title: Azure 全球公用/主權雲端平台。
+      imageSrc: 'https://static.docs.com/ui/media/product/azure/azure.svg'
+      links:
+        - url: /azure
+          text: Azure 服務
+    - title: 適用於託管、內部部署和行動資料中心的私人雲端平台。
+      imageSrc: media/index/azure-stack-hub.svg
+      links:
+        - url: /azure-stack/mdc
+          text: Azure Modular Datacenter
+        - url: /azure-stack/hci
+          text: Azure Stack HCI
+        - url: /azure-stack#azure-stack-hub
+          text: Azure Stack Hub
+        - url: /azure-stack/ruggedized
+          text: Azure Stack Hub 耐用
+    - title: 適用於裝置的智慧邊緣平台。
+      imageSrc: media/index/intelligent.svg
+      links:
+        - url: /azure/iot-edge/
+          text: Azure IoT Edge
+        - url: /azure-sphere
+          text: Azure Sphere
+        - url: /azure/databox-online/
+          text: Azure Stack Edge
+        - url: /windows/iot-core/
+          text: Windows for IoT
 conceptualContent:
   title: 混合式和多重雲端技術
   summary: 用於建立和操作混合式和多重雲端解決方案的服務和產品。
   items:
-  - title: AI + 機器學習服務
-    links:
-    - url: /azure/bot-service
-      itemType: overview
-      text: Azure Bot 服務
-    - url: /azure/search/
-      itemType: overview
-      text: Azue 認知搜尋
-    - url: /azure/cognitive-services/
-      itemType: overview
-      text: Azure 認知服務
-    - url: /azure/machine-learning/
-      itemType: overview
-      text: Azure Machine Learning
-  - title: 容器
-    links:
-    - url: /azure/azure-arc/kubernetes/
-      itemType: overview
-      text: 已啟用 Azure Arc 的 Kubernetes (預覽)
-    - url: /azure/container-instances/
-      itemType: overview
-      text: Azure Container Instances
-    - url: /azure/container-registry/
-      itemType: overview
-      text: Azure Container Registry
-    - url: /azure/aks/
-      itemType: overview
-      text: Azure 上的 Azure Kubernetes Service
-    - url: /azure-stack/user/azure-stack-kubernetes-aks-engine-overview
-      itemType: overview
-      text: Azure Stack Hub 上的 Azure Kubernetes Service
-    - url: /azure/docker/
-      itemType: overview
-      text: Azure 上的 Docker
-    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
-      itemType: overview
-      text: Kubernetes 上的 IoT Edge
-  - title: 資料庫
-    links:
-    - url: /azure/azure-arc/data/overview
-      itemType: overview
-      text: 已啟用 Azure Arc 的資料服務 (預覽)
-    - url: /sql/sql-server/azure-arc/overview
-      itemType: overview
-      text: 已啟用 Azure Arc 的 SQL Server (預覽)
-    - url: /azure/azure-sql-edge/overview
-      itemType: overview
-      text: Azure SQL Edge (預覽)
-  - title: 開發和整合
-    links:
-    - url: /azure-stack/operator/azure-stack-app-service-overview
-      itemType: overview
-      text: Azure Stack Hub 上的 App Service
-    - url: /azure/app-service/app-service-hybrid-connections
-      itemType: overview
-      text: Azure App Service 混合式連線
-    - url: /azure/devops
-      itemType: overview
-      text: Azure DevOps for CI/CD
-    - url: /azure/event-hubs/
-      itemType: overview
-      text: Azure 事件中心
-    - url: /azure/azure-functions/
-      itemType: overview
-      text: Azure Functions
-    - url: /azure/iot-hub/
-      itemType: overview
-      text: Azure IoT 中樞
-    - url: /azure/logic-apps/
-      itemType: overview
-      text: Azure Logic Apps
-    - url: /azure/azure-monitor/app/app-insights-overview
-      itemType: overview
-      text: Azure 監視器 - Application Insights
-    - url: /azure/service-fabric/
-      itemType: overview
-      text: Azure Service Fabric
-    - url: /azure-stack/user/event-hubs-overview
-      itemType: overview
-      text: Azure Stack Hub 上的事件中樞
-    - url: /azure-stack/user/iot-hub-overview
-      itemType: overview
-      text: Azure Stack Hub 上的 IoT 中樞 (預覽)
-  - title: Edge
-    links:
-    - url: /azure/databox-online/data-box-gateway-overview
-      itemType: overview
-      text: Azure 資料箱閘道
-    - url: /azure/iot-edge/
-      itemType: overview
-      text: Azure IoT Edge
-    - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
-      itemType: overview
-      text: Kubernetes 上的 Azure IoT Edge
-    - url: /azure-sphere
-      itemType: overview
-      text: Azure Sphere
-    - url: /azure/databox-online/azure-stack-edge-overview
-      itemType: overview
-      text: Azure Stack Edge
-    - url: /azure/azure-sql-edge/overview
-      itemType: overview
-      text: Azure SQL Edge (預覽)
-    - url: /windows/iot-core/
-      itemType: overview
-      text: Windows for IoT
-  - title: 身分識別與安全性
-    links:
-    - url: /azure/active-directory/hybrid/
-      itemType: overview
-      text: Azure AD 混合式身分識別
-    - url: /azure/security-center/
-      itemType: overview
-      text: Azure 資訊安全中心
-    - url: /azure/sentinel/
-      itemType: overview
-      text: Azure Sentinel
-    - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
-      itemType: overview
-      text: 混合式 Azure AD 已加入裝置
-  - title: 管理性
-    links:
-    - url: /azure/azure-arc/data/overview
-      itemType: overview
-      text: 已啟用 Azure Arc 的資料服務 (預覽)
-    - url: /azure/azure-arc/kubernetes/
-      itemType: overview
-      text: 已啟用 Azure Arc 的 Kubernetes (預覽)
-    - url: /azure/azure-arc/servers
-      itemType: overview
-      text: 已啟用 Azure Arc 的伺服器
-    - url: /sql/sql-server/azure-arc/overview
-      itemType: overview
-      text: 已啟用 Azure Arc 的 SQL Server (預覽)
-    - url: /azure/automation/
-      itemType: overview
-      text: Azure 自動化
-    - url: /azure/storage/files/
-      itemType: overview
-      text: Azure 檔案
-    - url: /azure/azure-monitor
-      itemType: overview
-      text: Azure 監視器
-    - url: /azure/site-recovery/
-      itemType: overview
-      text: Azure Site Recovery
-    - url: /azure-stack/hci/overview
-      itemType: overview
-      text: Azure Stack HCI 混合式功能
-    - url: /windows-server/manage/windows-admin-center/azure/
-      itemType: overview
-      text: Windows 管理中心 Azure 混合式服務
-  - title: 網路功能
-    links:
-    - url: /azure/networking/edge-zones-overview
-      itemType: overview
-      text: Azure Edge Zones
-    - url: /azure/expressroute/
-      itemType: overview
-      text: Azure ExpressRoute
-    - url: /azure/networking/azure-orbital-overview
-      itemType: overview
-      text: Azure Orbital (預覽)
-    - url: /azure/load-balancer/
-      itemType: overview
-      text: Azure Load Balancer
-    - url: /azure/private-link/
-      itemType: overview
-      text: Azure Private Link
-    - url: /azure/azure-relay/
-      itemType: overview
-      text: Azure 轉送
-    - url: /azure/traffic-manager/
-      itemType: overview
-      text: Azure 流量管理員
-    - url: /azure/virtual-network/
-      itemType: overview
-      text: Azure 虛擬網路
-    - url: /azure/vpn-gateway/
-      itemType: overview
-      text: Azure VPN 閘道
-  - title: 儲存體
-    links:
-    - url: /azure/avere-vfxt/avere-vfxt-overview
-      itemType: overview
-      text: Avere vFXT for Azure
-    - url: /azure/backup/
-      itemType: overview
-      text: Azure 備份
-    - url: /azure/storage/files/storage-files-introduction
-      itemType: overview
-      text: Azure 檔案
-    - url: /azure/site-recovery/
-      itemType: overview
-      text: Azure Site Recovery
-    - url: /azure/fxt-edge-filer/fxt-overview
-      itemType: overview
-      text: Azure FXT Edge Filer
-additionalContent:
-  sections:
-  - title: 混合式和多重雲端解決方案
-    summary: 探索及重複使用混合式和多重雲端專案的指導和範例。
-    items:
-    - title: 應用程式模式和解決方案範例
+    - title: AI + 機器學習服務
       links:
-      - url: ./app-solutions/overview-patterns-solution-examples.md
-        text: 什麼是模式和解決方案範例？
-      - url: ./app-solutions/overview-app-design-considerations.md
-        text: 應用程式設計考量
-    - title: 探索應用程式模式
+        - url: /azure/bot-service
+          itemType: overview
+          text: Azure Bot 服務
+        - url: /azure/search/
+          itemType: overview
+          text: Azue 認知搜尋
+        - url: /azure/cognitive-services/
+          itemType: overview
+          text: Azure 認知服務
+        - url: /azure/machine-learning/
+          itemType: overview
+          text: Azure Machine Learning
+    - title: 容器
       links:
-      - url: ./app-solutions/pattern-cross-cloud-scale.md
-        text: 跨雲端縮放
-      - url: ./app-solutions/pattern-cicd-pipeline.md
-        text: DevOps 混合式 CI/CD
-      - url: ./app-solutions/pattern-retail-footfall-detection.md
-        text: Footfall 偵測 (零售)
-      - url: ./app-solutions/pattern-geo-distributed.md
-        text: 異地分散式應用程式
-      - url: ./app-solutions/pattern-highly-available-kubernetes.md
-        text: 高可用性 Kubernetes 叢集
-    - title: 部署應用程式解決方案範例
+        - url: /azure/azure-arc/kubernetes/
+          itemType: overview
+          text: 已啟用 Azure Arc 的 Kubernetes (預覽)
+        - url: /azure/container-instances/
+          itemType: overview
+          text: Azure Container Instances
+        - url: /azure/container-registry/
+          itemType: overview
+          text: Azure Container Registry
+        - url: /azure/aks/
+          itemType: overview
+          text: Azure 上的 Azure Kubernetes Service
+        - url: /azure-stack/user/azure-stack-kubernetes-aks-engine-overview
+          itemType: overview
+          text: Azure Stack Hub 上的 Azure Kubernetes Service
+        - url: /azure/docker/
+          itemType: overview
+          text: Azure 上的 Docker
+        - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+          itemType: overview
+          text: Kubernetes 上的 IoT Edge
+    - title: 資料庫
       links:
-      - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
-        text: 跨雲端縮放
-      - url: https://aka.ms/hybriddevopsdeploy
-        text: DevOps 混合式 CI/CD
-      - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
-        text: Footfall 偵測 (零售)
-      - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
-        text: 異地分散式應用程式
-      - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
-        text: 高可用性 Kubernetes 叢集
-  - title: 評估與學習資源
-    items:
-    - title: Azure Stack
+        - url: /azure/azure-arc/data/overview
+          itemType: overview
+          text: 已啟用 Azure Arc 的資料服務 (預覽)
+        - url: /sql/sql-server/azure-arc/overview
+          itemType: overview
+          text: 已啟用 Azure Arc 的 SQL Server (預覽)
+        - url: /azure/azure-sql-edge/overview
+          itemType: overview
+          text: Azure SQL Edge (預覽)
+    - title: 開發和整合
       links:
-      - url: /azure-stack/asdk
-        text: Azure Stack 開發套件
-      - url: https://github.com/Azure/AzureStackHCI-EvalGuide
-        text: Azure Stack HCI 評估指南
-      - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
-        text: Azure Stack 混合式應用程式簡介
-      - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
-        text: 從 Azure Stack Hub 動態擴充到 Azure
+        - url: /azure-stack/operator/azure-stack-app-service-overview
+          itemType: overview
+          text: Azure Stack Hub 上的 App Service
+        - url: /azure/app-service/app-service-hybrid-connections
+          itemType: overview
+          text: Azure App Service 混合式連線
+        - url: /azure/devops
+          itemType: overview
+          text: Azure DevOps for CI/CD
+        - url: /azure/event-hubs/
+          itemType: overview
+          text: Azure 事件中樞
+        - url: /azure/azure-functions/
+          itemType: overview
+          text: Azure Functions
+        - url: /azure/iot-hub/
+          itemType: overview
+          text: Azure IoT 中樞
+        - url: /azure/logic-apps/
+          itemType: overview
+          text: Azure Logic Apps
+        - url: /azure/azure-monitor/app/app-insights-overview
+          itemType: overview
+          text: Azure 監視器 - Application Insights
+        - url: /azure/service-fabric/
+          itemType: overview
+          text: Azure Service Fabric
+        - url: /azure-stack/user/event-hubs-overview
+          itemType: overview
+          text: Azure Stack Hub 上的事件中樞
+        - url: /azure-stack/user/iot-hub-overview
+          itemType: overview
+          text: Azure Stack Hub 上的 IoT 中樞 (預覽)
     - title: Edge
       links:
-      - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
-        text: Azure IoT Edge AI 影片智慧解決方案加速器
-      - url: https://labs.iotedge.dev/
-        text: Azure IoT Edge 實際操作實驗室
-      - url: https://www.azureiotsolutions.com/Accelerators
-        text: Azure IoT 解決方案加速器
-      - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-        text: Azure IoT Edge 裝置認證
-    - title: 一般
-      links:
-      - url: /learn/modules/align-requirements-in-azure/
-        text: 使用 Azure 中的雲端類型和服務模型對應需求
-      - url: /azure/architecture/browse/?azure_categories=hybrid
-        text: Azure 混合式架構
-      - url: https://azure.microsoft.com/overview/azure-hybrid/
-        text: Azure 混合式功能
-      - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
-        text: Azure Hybrid 虛擬活動
-      - url: /azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview
-        text: 雲端採用架構-混合式和多重雲端案例
-      - url: /learn/modules/intro-to-azure-hybrid-services/
-        text: Azure 混合式雲端服務簡介
-      - url: https://events.microsoft.com/
-        text: Microsoft 事件目錄
-      - url: /learn
-        text: Microsoft Learn
+        - url: /azure/databox-online/data-box-gateway-overview
+          itemType: overview
+          text: Azure 資料箱閘道
+        - url: /azure/iot-edge/
+          itemType: overview
+          text: Azure IoT Edge
+        - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+          itemType: overview
+          text: Kubernetes 上的 Azure IoT Edge
+        - url: /azure-sphere
+          itemType: overview
+          text: Azure Sphere
+        - url: /azure/databox-online/azure-stack-edge-overview
+          itemType: overview
+          text: Azure Stack Edge
+        - url: /azure/azure-sql-edge/overview
+          itemType: overview
+          text: Azure SQL Edge (預覽)
+        - url: /windows/iot-core/
+          itemType: overview
+          text: Windows for IoT
     - title: 身分識別與安全性
       links:
-      - url: /learn/modules/azure-sentinel-deploy-configure/
-        text: 部署 Azure Sentinel 並連線資料來源
-      - url: /learn/modules/expose-hybrid-services-with-azure-relay/
-        text: 使用 Azure 轉送安全地公開混合式服務
-      - url: /learn/modules/implement-manage-hybrid-identity/
-        text: 執行和管理混合式身分識別
-      - url: /learn/modules/implement-hybrid-identity-windows-server/
-        text: 使用 Windows Server 實作混合式身分識別
-      - url: /learn/modules/intro-to-azure-sentinel/
-        text: Azure Sentinel 簡介
-      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
-        text: Windows Server 混合式雲端管理、監視和安全性
-    - title: 管理
+        - url: /azure/active-directory/hybrid/
+          itemType: overview
+          text: Azure AD 混合式身分識別
+        - url: /azure/security-center/
+          itemType: overview
+          text: Azure 資訊安全中心
+        - url: /azure/sentinel/
+          itemType: overview
+          text: Azure Sentinel
+        - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
+          itemType: overview
+          text: 混合式 Azure AD 已加入裝置
+    - title: 管理性
       links:
-      - url: https://azurearcjumpstart.io/
-        text: Azure Arc 快速入門手冊
-      - url: /learn/browse/?terms=%22%20Arc%20%22
-        text: Azure Arc 學習模組
-      - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
-        text: 描述高可用性和嚴重損壞修復策略
-      - url: /learn/browse/?terms="disaster%20recovery"
-        text: 嚴重損壞修復學習模組
-      - url: /learn/browse/?terms="high%20availability"
-        text: 高可用性學習模組
-      - url: /learn/modules/intro-to-azure-arc/
-        text: Azure Arc 簡介
-      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
-        text: 監視 Windows Server IaaS 虛擬機器和混合式執行個體
-      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
-        text: Windows Server 混合式雲端管理、監視和安全性
+        - url: /azure/azure-arc/data/overview
+          itemType: overview
+          text: 已啟用 Azure Arc 的資料服務 (預覽)
+        - url: /azure/azure-arc/kubernetes/
+          itemType: overview
+          text: 已啟用 Azure Arc 的 Kubernetes (預覽)
+        - url: /azure/azure-arc/servers
+          itemType: overview
+          text: 已啟用 Azure Arc 的伺服器
+        - url: /sql/sql-server/azure-arc/overview
+          itemType: overview
+          text: 已啟用 Azure Arc 的 SQL Server (預覽)
+        - url: /azure/automation/
+          itemType: overview
+          text: Azure 自動化
+        - url: /azure/storage/files/
+          itemType: overview
+          text: Azure 檔案
+        - url: /azure/azure-monitor
+          itemType: overview
+          text: Azure 監視器
+        - url: /azure/site-recovery/
+          itemType: overview
+          text: Azure Site Recovery
+        - url: /azure-stack/hci/overview
+          itemType: overview
+          text: Azure Stack HCI 混合式功能
+        - url: /windows-server/manage/windows-admin-center/azure/
+          itemType: overview
+          text: Windows 管理中心 Azure 混合式服務
     - title: 網路功能
       links:
-      - url: /learn/modules/design-a-hybrid-network-architecture/
-        text: 在 Azure 上設計混合式網路架構
-      - url: /learn/modules/expose-hybrid-services-with-azure-relay/
-        text: 使用 Azure 轉送安全地公開混合式服務
-      - url: /learn/modules/implement-hybrid-network-infrastructure/
-        text: 實作混合式網路基礎結構
+        - url: /azure/networking/edge-zones-overview
+          itemType: overview
+          text: Azure Edge Zones
+        - url: /azure/expressroute/
+          itemType: overview
+          text: Azure ExpressRoute
+        - url: /azure/networking/azure-orbital-overview
+          itemType: overview
+          text: Azure Orbital (預覽)
+        - url: /azure/load-balancer/
+          itemType: overview
+          text: Azure Load Balancer
+        - url: /azure/private-link/
+          itemType: overview
+          text: Azure Private Link
+        - url: /azure/azure-relay/
+          itemType: overview
+          text: Azure 轉送
+        - url: /azure/traffic-manager/
+          itemType: overview
+          text: Azure 流量管理員
+        - url: /azure/virtual-network/
+          itemType: overview
+          text: Azure 虛擬網路
+        - url: /azure/vpn-gateway/
+          itemType: overview
+          text: Azure VPN 閘道
     - title: 儲存體
       links:
-      - url: /learn/modules/implement-hybrid-file-server-infrastructure/
-        text: 實作混合式檔案伺服器基礎結構
-      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
-        text: 使用 Windows Server IaaS 實作混合式備份和復原
-    - title: Windows Server
-      links:
-      - url: /learn/paths/implement-windows-server-hybrid-cloud-infrastructure/
-        text: 實作 Windows Server 混合式雲端基礎結構
-      - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
-        text: 使用 Windows Server IaaS 實作混合式備份和復原
-      - url: /learn/modules/implement-hybrid-identity-windows-server/
-        text: 使用 Windows Server 實作混合式身分識別
-      - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
-        text: 監視 Windows Server IaaS 虛擬機器和混合式執行個體
-      - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
-        text: Windows Server 混合式雲端管理、監視和安全性
-  - title: 其他資源
-    items:
-    - title: 一般
-      links:
-      - url: https://azure.microsoft.com/blog/topics/hybrid/
-        text: Azure 混合式部落格
-      - url: https://azure.microsoft.com/overview/azure-hybrid/
-        text: Azure 混合式功能
-      - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
-        text: 客戶 Azure Stack Hub 解決方案
-      - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
-        text: 客戶混合式雲端故事
-    - title: 支援
-      links:
-      - url: https://azure.microsoft.com/support/options/
-        text: Azure 支援
-      - url: https://feedback.azure.com/
-        text: Azure User Voice 意見反應
-      - url: /answers/products/
-        text: Microsoft Q&A 論壇
-      - url: https://stackoverflow.com/
-        text: 堆疊溢位
-    - title: 技術
-      links:
-      - url: /azure/developer/
-        text: Azure 開發人員文件和工具
-      - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-        text: 適用於 Visual Studio Code 的 Azure IoT 工具
-      - url: /samples/browse/
-        text: 程式碼範例瀏覽器
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-        text: 視覺 AI 開發人員套件
-      - url: /visualstudio/azure/
-        text: Visual Studio Azure 開發
+        - url: /azure/avere-vfxt/avere-vfxt-overview
+          itemType: overview
+          text: Avere vFXT for Azure
+        - url: /azure/backup/
+          itemType: overview
+          text: Azure 備份
+        - url: /azure/storage/files/storage-files-introduction
+          itemType: overview
+          text: Azure 檔案
+        - url: /azure/site-recovery/
+          itemType: overview
+          text: Azure Site Recovery
+        - url: /azure/fxt-edge-filer/fxt-overview
+          itemType: overview
+          text: Azure FXT Edge Filer
+additionalContent:
+  sections:
+    - title: 混合式和多重雲端解決方案
+      summary: 探索及重複使用混合式和多重雲端專案的指導和範例。
+      items:
+        - title: 應用程式模式和解決方案範例
+          links:
+            - url: ./app-solutions/overview-patterns-solution-examples.md
+              text: 什麼是模式和解決方案範例？
+            - url: ./app-solutions/overview-app-design-considerations.md
+              text: 應用程式設計考量
+        - title: 探索應用程式模式
+          links:
+            - url: ./app-solutions/pattern-cross-cloud-scale.md
+              text: 跨雲端縮放
+            - url: ./app-solutions/pattern-cicd-pipeline.md
+              text: DevOps 混合式 CI/CD
+            - url: ./app-solutions/pattern-retail-footfall-detection.md
+              text: Footfall 偵測 (零售)
+            - url: ./app-solutions/pattern-geo-distributed.md
+              text: 異地分散式應用程式
+            - url: ./app-solutions/pattern-highly-available-kubernetes.md
+              text: 高可用性 Kubernetes 叢集
+        - title: 部署應用程式解決方案範例
+          links:
+            - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
+              text: 跨雲端縮放
+            - url: 'https://aka.ms/hybriddevopsdeploy'
+              text: DevOps 混合式 CI/CD
+            - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
+              text: Footfall 偵測 (零售)
+            - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
+              text: 異地分散式應用程式
+            - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+              text: 高可用性 Kubernetes 叢集
+    - title: 評估與學習資源
+      items:
+        - title: Azure Stack
+          links:
+            - url: /azure-stack/asdk
+              text: Azure Stack 開發套件
+            - url: 'https://github.com/Azure/AzureStackHCI-EvalGuide'
+              text: Azure Stack HCI 評估指南
+            - url: 'https://www.youtube.com/watch?v=to8D7Xl9SU8'
+              text: Azure Stack 混合式應用程式簡介
+            - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
+              text: 從 Azure Stack Hub 動態擴充到 Azure
+        - title: Edge
+          links:
+            - url: 'https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator'
+              text: Azure IoT Edge AI 影片智慧解決方案加速器
+            - url: 'https://labs.iotedge.dev/'
+              text: Azure IoT Edge 實際操作實驗室
+            - url: 'https://www.azureiotsolutions.com/Accelerators'
+              text: Azure IoT 解決方案加速器
+            - url: 'https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}'
+              text: Azure IoT Edge 裝置認證
+        - title: 一般
+          links:
+            - url: /learn/modules/align-requirements-in-azure/
+              text: 使用 Azure 中的雲端類型和服務模型對應需求
+            - url: /azure/architecture/browse/?azure_categories=hybrid
+              text: Azure 混合式架構
+            - url: 'https://azure.microsoft.com/overview/azure-hybrid/'
+              text: Azure 混合式功能
+            - url: 'https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf'
+              text: Azure Hybrid 虛擬活動
+            - url: /azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview
+              text: 雲端採用架構-混合式和多重雲端案例
+            - url: /learn/modules/intro-to-azure-hybrid-services/
+              text: Azure 混合式雲端服務簡介
+            - url: 'https://events.microsoft.com/'
+              text: Microsoft 事件目錄
+            - url: /learn
+              text: Microsoft Learn
+        - title: 身分識別與安全性
+          links:
+            - url: /learn/modules/azure-sentinel-deploy-configure/
+              text: 部署 Azure Sentinel 並連線資料來源
+            - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+              text: 使用 Azure 轉送安全地公開混合式服務
+            - url: /learn/modules/implement-manage-hybrid-identity/
+              text: 執行和管理混合式身分識別
+            - url: /learn/modules/implement-hybrid-identity-windows-server/
+              text: 使用 Windows Server 實作混合式身分識別
+            - url: /learn/modules/intro-to-azure-sentinel/
+              text: Azure Sentinel 簡介
+            - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+              text: Windows Server 混合式雲端管理、監視和安全性
+        - title: 管理
+          links:
+            - url: 'https://azurearcjumpstart.io/'
+              text: Azure Arc 快速入門手冊
+            - url: /learn/browse/?terms=%22%20Arc%20%22
+              text: Azure Arc 學習模組
+            - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
+              text: 描述高可用性和嚴重損壞修復策略
+            - url: /learn/browse/?terms="disaster%20recovery"
+              text: 嚴重損壞修復學習模組
+            - url: /learn/browse/?terms="high%20availability"
+              text: 高可用性學習模組
+            - url: /learn/modules/intro-to-azure-arc/
+              text: Azure Arc 簡介
+            - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+              text: 監視 Windows Server IaaS 虛擬機器和混合式執行個體
+            - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+              text: Windows Server 混合式雲端管理、監視和安全性
+        - title: 網路功能
+          links:
+            - url: /learn/modules/design-a-hybrid-network-architecture/
+              text: 在 Azure 上設計混合式網路架構
+            - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+              text: 使用 Azure 轉送安全地公開混合式服務
+            - url: /learn/modules/implement-hybrid-network-infrastructure/
+              text: 實作混合式網路基礎結構
+        - title: 儲存體
+          links:
+            - url: /learn/modules/implement-hybrid-file-server-infrastructure/
+              text: 實作混合式檔案伺服器基礎結構
+            - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+              text: 使用 Windows Server IaaS 實作混合式備份和復原
+        - title: Windows Server
+          links:
+            - url: /learn/paths/implement-windows-server-hybrid-cloud-infrastructure/
+              text: 實作 Windows Server 混合式雲端基礎結構
+            - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+              text: 使用 Windows Server IaaS 實作混合式備份和復原
+            - url: /learn/modules/implement-hybrid-identity-windows-server/
+              text: 使用 Windows Server 實作混合式身分識別
+            - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+              text: 監視 Windows Server IaaS 虛擬機器和混合式執行個體
+            - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+              text: Windows Server 混合式雲端管理、監視和安全性
+    - title: 其他資源
+      items:
+        - title: 一般
+          links:
+            - url: 'https://azure.microsoft.com/blog/topics/hybrid/'
+              text: Azure 混合式部落格
+            - url: 'https://azure.microsoft.com/overview/azure-hybrid/'
+              text: Azure 混合式功能
+            - url: 'https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22'
+              text: 客戶 Azure Stack Hub 解決方案
+            - url: 'https://customers.microsoft.com/en-us/search?sq="hybrid cloud"'
+              text: 客戶混合式雲端故事
+        - title: 支援
+          links:
+            - url: 'https://azure.microsoft.com/support/options/'
+              text: Azure 支援
+            - url: 'https://feedback.azure.com/'
+              text: Azure User Voice 意見反應
+            - url: /answers/products/
+              text: Microsoft Q&A 論壇
+            - url: 'https://stackoverflow.com/'
+              text: 堆疊溢位
+        - title: 技術
+          links:
+            - url: /azure/developer/
+              text: Azure 開發人員文件和工具
+            - url: 'https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools'
+              text: 適用於 Visual Studio Code 的 Azure IoT 工具
+            - url: /samples/browse/
+              text: 程式碼範例瀏覽器
+            - url: 'https://azure.github.io/Vision-AI-DevKit-Pages/'
+              text: 視覺 AI 開發人員套件
+            - url: /visualstudio/azure/
+              text: Visual Studio Azure 開發
