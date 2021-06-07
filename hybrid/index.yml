@@ -13,6 +13,12 @@ metadata:
   ms.custom: e2e-hybrid
 highlightedContent:
   items:
+    - title: 組建2021：混合式會話
+      itemType: video
+      url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=hybrid'
+    - title: 組建2021：弧形會話
+      itemType: video
+      url: 'https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=" Arc "'
     - title: Ignite 2021：混合式會話
       itemType: video
       url: 'https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid'
@@ -31,12 +37,6 @@ highlightedContent:
     - title: Azure Modular Datacenter 簡介
       itemType: video
       url: 'https://azure.microsoft.com/resources/videos/azure-modular-datacenter/'
-    - title: 激發 2020：Azure Stack HCI 的新功能
-      itemType: video
-      url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
-    - title: 組建 2020：混合式工作階段
-      itemType: video
-      url: 'https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D'
 productDirectory:
   title: Azure 混合式和多重雲端平台
   summary: 平台可用來建立和操作混合式和多重雲端解決方案。
@@ -133,7 +133,7 @@ conceptualContent:
           text: Azure DevOps for CI/CD
         - url: /azure/event-hubs/
           itemType: overview
-          text: Azure 事件中樞
+          text: Azure 事件中心
         - url: /azure/azure-functions/
           itemType: overview
           text: Azure Functions
@@ -317,6 +317,8 @@ additionalContent:
               text: Azure Stack 混合式應用程式簡介
             - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
               text: 從 Azure Stack Hub 動態擴充到 Azure
+            - url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
+              text: Azure Stack HCI 的新功能
         - title: Edge
           links:
             - url: 'https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator'
@@ -352,7 +354,7 @@ additionalContent:
             - url: /learn/modules/expose-hybrid-services-with-azure-relay/
               text: 使用 Azure 轉送安全地公開混合式服務
             - url: /learn/modules/implement-manage-hybrid-identity/
-              text: 執行和管理混合式身分識別
+              text: 實作及管理混合式身分識別
             - url: /learn/modules/implement-hybrid-identity-windows-server/
               text: 使用 Windows Server 實作混合式身分識別
             - url: /learn/modules/intro-to-azure-sentinel/
