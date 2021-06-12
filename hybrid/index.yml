@@ -9,7 +9,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 03/09/2021
+  ms.date: 06/11/2021
   ms.custom: e2e-hybrid
 highlightedContent:
   items:
@@ -319,6 +319,20 @@ additionalContent:
               text: 從 Azure Stack Hub 動態擴充到 Azure
             - url: 'https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030'
               text: Azure Stack HCI 的新功能
+        - title: 開發和整合
+          links:
+            - url: 'https://www.youtube.com/watch?v=to8D7Xl9SU8'
+              text: Azure Stack 混合式應用程式簡介
+            - url: 'https://mybuild.microsoft.com/sessions/2debfc2e-f0b3-4adf-bcec-d126930f806f'
+              text: 建立可在任何地方執行的雲端原生應用程式
+            - url: 'https://mybuild.microsoft.com/sessions/9f56bc10-30bd-42e2-afc8-b61b22260c49'
+              text: 'Azure Arc (詢問專家，建立一致的混合式和多重雲端應用程式) '
+            - url: 'https://www.youtube.com/watch?v=2lw8zOpJTn0'
+              text: 從 Azure Stack Hub 動態擴充到 Azure
+            - url: 'https://mybuild.microsoft.com/sessions/92bd3e12-fbf4-4278-b68f-fe776b02adfa'
+              text: Logic Apps-加強整合的未來
+            - url: 'https://mybuild.microsoft.com/sessions/76ebac39-517d-44da-a58e-df4193b5efa9'
+              text: 使用 .NET 進行新式應用程式開發的未來
         - title: Edge
           links:
             - url: 'https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator'
