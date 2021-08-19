@@ -7,12 +7,12 @@ ms.date: 10/31/2019
 ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 10/31/2019
-ms.openlocfilehash: 866557ec3af2337e9f034da84cf417675508563b
-ms.sourcegitcommit: 962334135b63ac99c715e7bc8fb9282648ba63c9
+ms.openlocfilehash: 79fb39d418bed53ef6a78980fcd9188bdf6e57ae
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895324"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281273"
 ---
 # <a name="footfall-detection-pattern"></a>客流量偵測模式
 
@@ -88,4 +88,4 @@ Contoso 想要以不顯眼且不侵犯隱私的方式來判斷其客戶的人口
 - 請參閱客流量偵測模式使用的[分層資料模式](https://aka.ms/tiereddatadeploy)。
 - 若要深入了解如何使用自訂視覺，請參閱[自訂視覺 AI 開發套件](https://azure.github.io/Vision-AI-DevKit-Pages/)。 
 
-當您準備好測試解決方案範例時，請繼續參閱 [客流量偵測部署指南](solution-deployment-guide-retail-footfall-detection.md)。 部署指南提供部署及測試其元件的逐步指示。
+當您準備好測試解決方案範例時，請繼續參閱 [客流量偵測部署指南](/azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection)。 部署指南提供部署及測試其元件的逐步指示。

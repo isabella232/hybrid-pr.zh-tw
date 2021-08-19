@@ -295,15 +295,15 @@ additionalContent:
               text: 高可用性 Kubernetes 叢集
         - title: 部署應用程式解決方案範例
           links:
-            - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
               text: 跨雲端縮放
             - url: 'https://aka.ms/hybriddevopsdeploy'
               text: DevOps 混合式 CI/CD
-            - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
               text: Footfall 偵測 (零售)
-            - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
               text: 異地分散式應用程式
-            - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+            - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
               text: 高可用性 Kubernetes 叢集
     - title: 評估與學習資源
       items:
@@ -372,7 +372,7 @@ additionalContent:
             - url: /learn/modules/expose-hybrid-services-with-azure-relay/
               text: 使用 Azure 轉送安全地公開混合式服務
             - url: /learn/modules/implement-manage-hybrid-identity/
-              text: 實作和管理混合式身分識別
+              text: 實作及管理混合式身分識別
             - url: /learn/modules/implement-hybrid-identity-windows-server/
               text: 使用 Windows Server 實作混合式身分識別
             - url: /learn/modules/intro-to-azure-sentinel/

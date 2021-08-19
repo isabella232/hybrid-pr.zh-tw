@@ -7,12 +7,12 @@ ms.date: 12/03/2020
 ms.author: bryanla
 ms.reviewer: bryanla
 ms.lastreviewed: 12/03/2020
-ms.openlocfilehash: 454cc0a0531882b7a8ec050a461420ce13eebcfe
-ms.sourcegitcommit: df7e3e6423c3d4e8a42dae3d1acfba1d55057258
-ms.translationtype: HT
+ms.openlocfilehash: f8a733bcdab871695e552ec687d42e3ff4230490
+ms.sourcegitcommit: df06f598da09074d387f5f765f7c4237af98fb59
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96911999"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "122281307"
 ---
 # <a name="high-availability-kubernetes-cluster-pattern"></a>高可用性 Kubernetes 叢集模式
 
@@ -127,7 +127,7 @@ Kubernetes 叢集本身包含並以其作為建置基礎的 Azure (Stack) IaaS �
 
     您可以使用一開始用來部署 Kubernetes 叢集的 AKS 引擎協助程式 VM 來手動調整規模。 如需詳細資訊，請參閱[調整 Kubernetes 叢集](https://github.com/Azure/aks-engine/blob/master/docs/topics/scale.md)
 
-- **配額** - 請考量您在 Azure Stack Hub 上規劃 AKS 部署時所設定的[配額](/azure-stack/operator/azure-stack-quota-types)。 請確定每個[訂用帳戶](/azure-stack/operator/service-plan-offer-subscription-overview)都已設定適當的方案和配額。 擴增叢集時，訂用帳戶必須可容納您叢集所需的計算、儲存體和其他服務數量。
+- **配額** - 請考量您在 Azure Stack Hub 上規劃 AKS 部署時所設定的 [配額](/azure-stack/operator/azure-stack-quota-types)。 請確定每個[訂用帳戶](/azure-stack/operator/service-plan-offer-subscription-overview)都已設定適當的方案和配額。 擴增叢集時，訂用帳戶必須可容納您叢集所需的計算、儲存體和其他服務數量。
 
 - **應用程式工作負載** - 請在 Azure Kubernetes Service 文件的 Kubernetes 核心概念中參閱＜[叢集和工作負載概念](/azure/aks/concepts-clusters-workloads#nodes-and-node-pools)＞。 本文將協助您根據應用程式的計算和記憶體需求來界定適當的 VM 大小範圍。  
 
@@ -394,4 +394,4 @@ Microsoft 合作夥伴解決方案可以擴充 Azure Stack Hub 的功能。 這�
 - Azure Stack Hub 中的[跨雲端調整](pattern-cross-cloud-scale.md)及[異地分散式應用程式模式](pattern-geo-distributed.md)。
 - [Azure Kubernetes Service (AKS) 上的微服務架構](/azure/architecture/reference-architectures/microservices/aks)。
 
-當您準備好要測試解決方案範例時，請繼續前往[高可用性 Kubernetes 叢集部署指南](solution-deployment-guide-highly-available-kubernetes.md)。 部署指南提供部署及測試其元件的逐步指示。
+當您準備好要測試解決方案範例時，請繼續前往[高可用性 Kubernetes 叢集部署指南](/azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes)。 部署指南提供部署及測試其元件的逐步指示。
